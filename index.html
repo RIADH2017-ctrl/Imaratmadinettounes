@@ -1,71 +1,2695 @@
-<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>عمارة مدينة تونس في العهد الحفصي | الأستاذ رياض سليمي</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <style>body { font-family: 'Cairo', sans-serif; background-color: #f1f5f9; }</style>
-</head>
-<body class="text-slate-800">
+    <title>عمارة مدينة تونس في العهد الحفصي - الدرس الأول</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <!-- العنوان -->
-    <header class="bg-emerald-950 text-white py-12 px-6 text-center">
-        <h1 class="text-4xl font-black mb-4">عمارة مدينة تونس في العهد الحفصي</h1>
-        <p class="text-xl text-emerald-200">مركز إشعاع ثقافي وحضاري (1228-1574 م)</p>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #1a365d 0%, #2d3748 30%, #553c9a 60%, #9b2c2c 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-gradient::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.6;
+        }
+
+        .geometric-pattern {
+            background: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23d4a574' stroke-width='0.5' opacity='0.3'%3E%3Ccircle cx='40' cy='40' r='30'/%3E%3Ccircle cx='40' cy='40' r='20'/%3E%3Cpath d='M40 10 L70 40 L40 70 L10 40 Z'/%3E%3C/g%3E%3C/svg%3E");
+            animation: patternMove 30s linear infinite;
+        }
+
+        @keyframes patternMove {
+            0% { background-position: 0 0; }
+            100% { background-position: 80px 80px; }
+        }
+
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+        }
+
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .pulse-glow {
+            animation: pulseGlow 2s ease-in-out infinite;
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 5px rgba(212, 165, 116, 0.5); }
+            50% { box-shadow: 0 0 20px rgba(212, 165, 116, 0.8), 0 0 40px rgba(212, 165, 116, 0.3); }
+        }
+
+        .section-divider {
+            height: 4px;
+            background: linear-gradient(90deg, transparent, #d4a574, #c4956a, #d4a574, transparent);
+            margin: 2rem auto;
+            width: 60%;
+            border-radius: 2px;
+        }
+
+        .islamic-border {
+            border-image: linear-gradient(90deg, transparent, #d4a574, transparent) 1;
+            border-width: 0 0 3px 0;
+            border-style: solid;
+        }
+
+        .mosque-icon {
+            width: 80px;
+            height: 80px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            right: -28px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #d4a574, #c4956a);
+            border: 3px solid #fff;
+            box-shadow: 0 0 0 3px #d4a574;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            right: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1px;
+            height: calc(100% + 20px);
+            background: #d4a574;
+            z-index: -1;
+        }
+
+        .timeline-item:last-child::after {
+            display: none;
+        }
+
+        .image-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+
+        .image-container img {
+            transition: transform 0.5s ease;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.1);
+        }
+
+        .image-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            padding: 2rem 1rem 1rem;
+            transform: translateY(100%);
+            transition: transform 0.5s ease;
+        }
+
+        .image-container:hover .image-overlay {
+            transform: translateY(0);
+        }
+
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            right: 0;
+            width: 0;
+            height: 2px;
+            background: #d4a574;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .accordion-content.active {
+            max-height: 5000px;
+        }
+
+        .accordion-toggle {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .accordion-toggle:hover {
+            background: rgba(212, 165, 116, 0.1);
+        }
+
+        .rotate-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .rotate-icon.active {
+            transform: rotate(180deg);
+        }
+
+        .scroll-to-top {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #d4a574, #c4956a);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(212, 165, 116, 0.4);
+        }
+
+        .scroll-to-top.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #d4a574, #c4956a);
+            z-index: 1001;
+            transition: width 0.2s ease;
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .objectives-card {
+            background: linear-gradient(135deg, #fff 0%, #fef7ed 100%);
+            border-right: 5px solid #d4a574;
+        }
+
+        .activity-card {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            border-right: 5px solid #0284c7;
+        }
+
+        .print-hide {
+            /* hide in print */
+        }
+
+        @media print {
+            .print-hide { display: none !important; }
+        }
+
+        .typewriter {
+            display: inline-block;
+            overflow: hidden;
+            border-right: 3px solid #d4a574;
+            white-space: nowrap;
+            animation: typing 3s steps(40) 1s forwards, blink 0.75s step-end infinite;
+            max-width: 0;
+        }
+
+        @keyframes typing {
+            from { max-width: 0; }
+            to { max-width: 100%; }
+        }
+
+        @keyframes blink {
+            from, to { border-color: transparent; }
+            50% { border-color: #d4a574; }
+        }
+
+        .stagger-in > * {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: staggerFadeIn 0.6s ease forwards;
+        }
+
+        .stagger-in > *:nth-child(1) { animation-delay: 0.1s; }
+        .stagger-in > *:nth-child(2) { animation-delay: 0.2s; }
+        .stagger-in > *:nth-child(3) { animation-delay: 0.3s; }
+        .stagger-in > *:nth-child(4) { animation-delay: 0.4s; }
+        .stagger-in > *:nth-child(5) { animation-delay: 0.5s; }
+        .stagger-in > *:nth-child(6) { animation-delay: 0.6s; }
+
+        @keyframes staggerFadeIn {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .mosque-dome {
+            width: 120px;
+            height: 60px;
+            background: radial-gradient(ellipse at bottom, #d4a574 0%, #c4956a 50%, #a0785a 100%);
+            border-radius: 50% 50% 0 0;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .mosque-dome::before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: -10px;
+            right: -10px;
+            height: 10px;
+            background: #8b6f56;
+            border-radius: 2px;
+        }
+
+        .minaret {
+            width: 20px;
+            height: 80px;
+            background: linear-gradient(to right, #c4956a, #d4a574, #c4956a);
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .minaret::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 15px solid #d4a574;
+        }
+
+        .star-pattern {
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='%23d4a574' fill-opacity='0.08'%3E%3Cpath d='M30 5l5.5 11.5L48 19l-9 8.5L41.5 40 30 34l-11.5 6L21 27.5l-9-8.5L14.5 16.5z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #d4a574, #c4956a, #b8860b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .tab-btn.active {
+            background: linear-gradient(135deg, #d4a574, #c4956a);
+            color: white;
+        }
+
+        .highlight-box {
+            border: 2px dashed #d4a574;
+            background: rgba(212, 165, 116, 0.05);
+            border-radius: 12px;
+            padding: 1.5rem;
+            position: relative;
+        }
+
+        .highlight-box::before {
+            content: '❊';
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            background: #f8fafc;
+            padding: 0 10px;
+            color: #d4a574;
+            font-size: 1.2rem;
+        }
+
+        .info-callout {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-right: 5px solid #f59e0b;
+            border-radius: 0 12px 12px 0;
+        }
+
+        .success-callout {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            border-right: 5px solid #10b981;
+            border-radius: 0 12px 12px 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar" style="width: 0%"></div>
+
+    <!-- Navigation -->
+    <nav class="bg-white/95 backdrop-blur-md shadow-lg sticky top-0 z-50 print-hide">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <div class="w-10 h-10 bg-gradient-to-br from-amber-600 to-amber-800 rounded-lg flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.18l7 3.5v7.64l-7 3.5-7-3.5V7.68l7-3.5z"/>
+                            <path d="M12 6.5L7 9v6l5 2.5L17 15V9l-5-2.5zm0 1.73l3 1.5v3.54l-3 1.5-3-1.5V9.73l3-1.5z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="text-lg font-bold text-gray-800">عمارة مدينة تونس</h1>
+                        <p class="text-xs text-gray-500">العهد الحفصي - المستوى أولى ثانوي</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-6 space-x-reverse">
+                    <a href="#objectives" class="nav-link text-sm text-gray-600 hover:text-amber-700 font-medium">الأهداف</a>
+                    <a href="#element1" class="nav-link text-sm text-gray-600 hover:text-amber-700 font-medium">المعالم المعمارية</a>
+                    <a href="#element2" class="nav-link text-sm text-gray-600 hover:text-amber-700 font-medium">دراسة المعالم</a>
+                    <a href="#activities" class="nav-link text-sm text-gray-600 hover:text-amber-700 font-medium">الأنشطة</a>
+                </div>
+                <button id="menuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden bg-white border-t">
+            <div class="px-4 py-3 space-y-2">
+                <a href="#objectives" class="block py-2 px-3 rounded hover:bg-amber-50 text-gray-700">الأهداف</a>
+                <a href="#element1" class="block py-2 px-3 rounded hover:bg-amber-50 text-gray-700">المعالم المعمارية</a>
+                <a href="#element2" class="block py-2 px-3 rounded hover:bg-amber-50 text-gray-700">دراسة المعالم</a>
+                <a href="#activities" class="block py-2 px-3 rounded hover:bg-amber-50 text-gray-700">الأنشطة</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient text-white py-20 md:py-32 relative">
+        <div class="geometric-pattern absolute inset-0"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-block bg-white/10 backdrop-blur-sm rounded-full px-4 py-1 mb-6">
+                        <span class="text-amber-300 text-sm font-medium">المحور: تونس في العهد الحفصي - مركز إشعاع ثقافي</span>
+                    </div>
+                    <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight">
+                        عمارة مدينة
+                        <span class="gradient-text" style="-webkit-text-fill-color: #d4a574;">تونس</span>
+                        في العهد الحفصي
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
+                        دراسة شاملة لمكونات المعمار و المعالم الحضارية لمدينة تونس العاصمة خلال الفترة الحفصية، أحد أهم الفترات الزاهرة في تاريخ تونس
+                    </p>
+                    <div class="flex flex-wrap gap-4 mb-8">
+                        <div class="bg-white/10 backdrop-blur-sm rounded-xl px-4 py-3 flex items-center gap-2">
+                            <svg class="w-5 h-5 text-amber-300" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.016l2.16.926a3 3 0 002.16 0l7-3V14a9 9 0 01-9.06-.427z"/>
+                            </svg>
+                            <span class="text-sm">المستوى: أولى ثانوي</span>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm rounded-xl px-4 py-3 flex items-center gap-2">
+                            <svg class="w-5 h-5 text-amber-300" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-sm">السنة الدراسية: 26/27</span>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm rounded-xl px-4 py-3 flex items-center gap-2">
+                            <svg class="w-5 h-5 text-amber-300" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/>
+                            </svg>
+                            <span class="text-sm">إعداد: الأستاذ رياض سليمي</span>
+                        </div>
+                    </div>
+                    <a href="#objectives" class="inline-flex items-center gap-2 bg-gradient-to-r from-amber-600 to-amber-700 text-white px-8 py-4 rounded-xl font-bold text-lg hover:from-amber-700 hover:to-amber-800 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        ابدأ الدرس
+                        <svg class="w-5 h-5 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="hidden md:flex justify-center">
+                    <div class="relative">
+                        <!-- Mosque Illustration -->
+                        <div class="float-animation">
+                            <svg width="350" height="400" viewBox="0 0 350 400" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Main Building -->
+                                <rect x="50" y="200" width="250" height="180" rx="5" fill="#d4a574" opacity="0.3"/>
+                                <rect x="50" y="200" width="250" height="180" rx="5" stroke="#d4a574" stroke-width="2" fill="none"/>
+                                
+                                <!-- Central Dome -->
+                                <ellipse cx="175" cy="200" rx="80" ry="60" fill="#d4a574" opacity="0.4"/>
+                                <ellipse cx="175" cy="200" rx="80" ry="60" stroke="#d4a574" stroke-width="2" fill="none"/>
+                                
+                                <!-- Crescent -->
+                                <circle cx="175" cy="140" r="15" fill="#d4a574"/>
+                                <circle cx="170" cy="137" r="12" fill="rgba(26, 54, 93, 0.8)"/>
+                                
+                                <!-- Side Domes -->
+                                <ellipse cx="100" cy="210" rx="40" ry="30" fill="#d4a574" opacity="0.3"/>
+                                <ellipse cx="100" cy="210" rx="40" ry="30" stroke="#d4a574" stroke-width="1.5" fill="none"/>
+                                
+                                <ellipse cx="250" cy="210" rx="40" ry="30" fill="#d4a574" opacity="0.3"/>
+                                <ellipse cx="250" cy="210" rx="40" ry="30" stroke="#d4a574" stroke-width="1.5" fill="none"/>
+                                
+                                <!-- Minaret -->
+                                <rect x="280" y="100" width="30" height="280" rx="3" fill="#d4a574" opacity="0.3"/>
+                                <rect x="280" y="100" width="30" height="280" rx="3" stroke="#d4a574" stroke-width="2" fill="none"/>
+                                
+                                <!-- Minaret Top -->
+                                <polygon points="295,70 280,100 310,100" fill="#d4a574" opacity="0.4"/>
+                                <polygon points="295,70 280,100 310,100" stroke="#d4a574" stroke-width="2" fill="none"/>
+                                
+                                <!-- Minaret Crescent -->
+                                <circle cx="295" cy="65" r="8" fill="#d4a574"/>
+                                <circle cx="292" cy="63" r="6" fill="rgba(26, 54, 93, 0.8)"/>
+                                
+                                <!-- Windows -->
+                                <rect x="80" y="250" width="30" height="50" rx="15 15 0 0" fill="none" stroke="#d4a574" stroke-width="2"/>
+                                <rect x="130" y="250" width="30" height="50" rx="15 15 0 0" fill="none" stroke="#d4a574" stroke-width="2"/>
+                                <rect x="190" y="250" width="30" height="50" rx="15 15 0 0" fill="none" stroke="#d4a574" stroke-width="2"/>
+                                <rect x="240" y="250" width="30" height="50" rx="15 15 0 0" fill="none" stroke="#d4a574" stroke-width="2"/>
+                                
+                                <!-- Door -->
+                                <rect x="150" y="310" width="50" height="70" rx="25 25 0 0" fill="none" stroke="#d4a574" stroke-width="2"/>
+                                
+                                <!-- Arch Details -->
+                                <path d="M50 200 Q175 150 300 200" stroke="#d4a574" stroke-width="2" fill="none"/>
+                                
+                                <!-- Decorative Elements -->
+                                <circle cx="175" cy="350" r="5" fill="#d4a574" opacity="0.5"/>
+                                
+                                <!-- Stars -->
+                                <circle cx="50" cy="50" r="2" fill="#d4a574" opacity="0.5">
+                                    <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+                                </circle>
+                                <circle cx="100" cy="30" r="1.5" fill="#d4a574" opacity="0.5">
+                                    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+                                </circle>
+                                <circle cx="320" cy="40" r="2" fill="#d4a574" opacity="0.5">
+                                    <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite"/>
+                                </circle>
+                                <circle cx="20" cy="100" r="1.5" fill="#d4a574" opacity="0.5">
+                                    <animate attributeName="opacity" values="0.5;1;0.5" dur="3.5s" repeatCount="indefinite"/>
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center print-hide">
+            <div class="w-6 h-10 border-2 border-white/40 rounded-full flex justify-center">
+                <div class="w-1.5 h-3 bg-white/60 rounded-full mt-2 animate-bounce"></div>
+            </div>
+        </div>
     </header>
 
-    <main class="max-w-4xl mx-auto p-6 space-y-10">
+    <!-- Table of Contents -->
+    <section class="py-12 bg-white print-hide">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl font-bold text-center mb-8 text-gray-800">محتويات الدرس</h2>
+            <div class="grid md:grid-cols-4 gap-4 stagger-in">
+                <a href="#objectives" class="card-hover bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-6 text-center border border-amber-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-amber-400 to-amber-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                            <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">تحديد الأهداف</h3>
+                    <p class="text-sm text-gray-600">المعرفية والمهارية والسلوكية</p>
+                </a>
+                <a href="#element1" class="card-hover bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6 text-center border border-blue-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">المعالم المعمارية</h3>
+                    <p class="text-sm text-gray-600">مكونات مدينة تونس</p>
+                </a>
+                <a href="#element2" class="card-hover bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-6 text-center border border-green-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-400 to-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">دراسة المعالم</h3>
+                    <p class="text-sm text-gray-600">الدينية والمدنية والجنائزية</p>
+                </a>
+                <a href="#activities" class="card-hover bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-6 text-center border border-purple-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">الأنشطة المهارية</h3>
+                    <p class="text-sm text-gray-600">تمارين وأنشطة تطبيقية</p>
+                </a>
+            </div>
+        </div>
+    </section>
 
-        <!-- القسم المعرفي المعمق -->
-        <section class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
-            <h2 class="text-2xl font-bold text-emerald-900 mb-6 border-r-4 border-emerald-600 pr-4">تحليل المكونات المعمارية</h2>
-            <div class="space-y-6 text-justify leading-relaxed">
-                <p><strong>الموضع والمخطط:</strong> تأسست مدينة تونس الحفصية على نمط <em>"المدينة العضوية"</em>. لا يخضع المخطط لتنظيم هندسي مسبق بل لضرورات التضاريس والوظائف. يتمركز <strong>جامع الزيتونة</strong> في قلب المدينة كقطب ديني وتعليمي، تحيط به الأسواق المتخصصة (سوق العطارين، سوق الشماعية)، مما يخلق "حرمة" اقتصادية واجتماعية. تتسم الأزقة بالالتواء والضيق (الدروب) لغايات مناخية (توفير الظل) ودفاعية (إعاقة حركة الغزاة).</p>
-                <p><strong>التنوع العمراني:</strong> عكس العهد الحفصي ثراءً في الوظائف العمرانية:
-                    <ul class="list-disc pr-6 mt-2">
-                        <li><strong>الأسوار:</strong> نظام دفاعي مزدوج (داخلي وخارجي) يحيط بالمدينة والأرباض (باب سويقة، باب الجزيرة) التي استوعبت المهاجرين الأندلسيين.</li>
-                        <li><strong>المساجد والمدارس:</strong> مثلت منارات للفقه المالكي، حيث امتزجت العمارة المحلية بالتأثيرات الموحدية (الصوامع المربعة) والأندلسية.</li>
+    <!-- Objectives Section -->
+    <section id="objectives" class="py-16 bg-gradient-to-b from-white to-gray-50 star-pattern">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-amber-100 text-amber-800 px-4 py-1 rounded-full text-sm font-medium mb-4">الأهداف التعليمية</span>
+                <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4">تحديد الأهداف</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Cognitive Objectives -->
+                <div class="objectives-card rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.016l2.16.926a3 3 0 002.16 0l7-3V14a9 9 0 01-9.06-.427z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-800 mb-4">الأهداف المعرفية</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">✓</span>
+                            <span class="text-gray-700 text-sm leading-relaxed">تحديد موضع مدينة تونس ومخططها الهندسي في العهد الحفصي</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">✓</span>
+                            <span class="text-gray-700 text-sm leading-relaxed">التعرف على المكونات المعمارية لمدينة تونس (الحارات، الأرباض، المساجد، الأسواق، الزوايا، المقابر، الأسوار، المدارس، القصبة)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">✓</span>
+                            <span class="text-gray-700 text-sm leading-relaxed">معرفة خصائص العمارة الدينية: جامع القصبة، جامع الزيتونة، ميضأة السلطان</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">✓</span>
+                            <span class="text-gray-700 text-sm leading-relaxed">دراسة العمارة المدنية من خلال المدرسة الشماعية</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">✓</span>
+                            <span class="text-gray-700 text-sm leading-relaxed">تحليل العمارة الجنائزية من خلال زاوية سيدي قاسم الجليزي</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">✓</span>
+                            <span class="text-gray-700 text-sm leading-relaxed">استيعاب التأثيرات الفنية المعمارية المتعددة المصادر</span>
+                        </li>
                     </ul>
-                </p>
-            </div>
-        </section>
-
-        <!-- جدول المعالم -->
-        <section class="overflow-x-auto">
-            <table class="w-full bg-white shadow-sm rounded-xl overflow-hidden border border-slate-200">
-                <thead class="bg-emerald-800 text-white">
-                    <tr><th class="p-4">المعلم</th><th class="p-4">الوظيفة</th><th class="p-4">السمات الفنية</th></tr>
-                </thead>
-                <tbody class="divide-y divide-slate-100 text-center">
-                    <tr><td class="p-4 font-bold">جامع القصبة</td><td class="p-4">دينية/سياسية</td><td class="p-4">طراز موحدي، زخارف معينية (سياج).</td></tr>
-                    <tr><td class="p-4 font-bold">المدرسة الشماعية</td><td class="p-4">تعليمية</td><td class="p-4">تخطيط صحن مركزي، تأثيرات أندلسية.</td></tr>
-                    <tr><td class="p-4 font-bold">زاوية سيدي قاسم</td><td class="p-4">جنائزية/صوفية</td><td class="p-4">قبة هرمية، توظيف مكثف للجليز.</td></tr>
-                </tbody>
-            </table>
-        </section>
-
-        <!-- القسم المهاري الجديد (الأنشطة) -->
-        <section class="bg-emerald-50 p-8 rounded-2xl border border-emerald-200">
-            <h2 class="text-2xl font-bold text-emerald-900 mb-6">🎯 قسم الأنشطة المهارية للتلاميذ</h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="bg-white p-5 rounded-lg shadow-sm">
-                    <h3 class="font-bold text-emerald-700 mb-2">1. نشاط قراءة المخطط</h3>
-                    <p class="text-sm">قارن بين خريطة مدينة تونس العتيقة والمخططات الحديثة. استخرج ثلاثة معالم لا تزال قائمة وما زالت تؤدي وظيفتها الأصلية.</p>
                 </div>
-                <div class="bg-white p-5 rounded-lg shadow-sm">
-                    <h3 class="font-bold text-emerald-700 mb-2">2. نشاط التحليل الفني</h3>
-                    <p class="text-sm">أمامك صورة "زاوية سيدي قاسم الجليزي": صف مكونات القبة الهرمية وكيف تساهم المواد المحلية (القرميد، الجليز) في إبراز هويتها المعمارية؟</p>
+
+                <!-- Skills Objectives -->
+                <div class="activity-card rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="w-14 h-14 bg-gradient-to-br from-sky-500 to-blue-700 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm-1 5a1 1 0 011-1h.01a1 1 0 110 2H8a1 1 0 01-1-1zm0 3a1 1 0 011-1h.01a1 1 0 110 2H8a1 1 0 01-1-1z" clip-rule="evenodd"/>
+                            <path d="M10 16a6 6 0 100-12 6 6 0 000 12zm0-1a5 5 0 110-10 5 5 0 010 10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-sky-800 mb-4">الأهداف المهارية</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 bg-sky-100 text-sky-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">⚡</span>
+                            <span class="text-gray-700 text-sm leading-relaxed">قراءة وتحليل خريطة لمدينة تونس في العهد الحفصي</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 bg-sky-100 text-sky-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">⚡</span>
+                            <span class="text-gray-700 text-sm leading-relaxed">تصنيف المعالم المعمارية حسب وظائفها (دينية، مدنية، جنائزية)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 bg-sky-100 text-sky-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">⚡</span>
+                            <span class="text-gray-700 text-sm leading-relaxed">استخراج المعلومات من وثائق تاريخية وصور معمارية</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 bg-sky-100 text-sky-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">⚡</span>
+                            <span class="text-gray-700 text-sm leading-relaxed">تنظيم المعلومات في جدول مقارن</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 bg-sky-100 text-sky-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">⚡</span>
+                            <span class="text-gray-700 text-sm leading-relaxed">التعبير الكتابي عن الأفكار التاريخية بأسلوب علمي</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 bg-sky-100 text-sky-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">⚡</span>
+                            <span class="text-gray-700 text-sm leading-relaxed">المقارنة بين الأساليب المعمارية المختلفة</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Behavioral Objectives -->
+                <div class="success-callout rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="w-14 h-14 bg-gradient-to-br from-emerald-500 to-green-700 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-emerald-800 mb-4">الأهداف السلوكية</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">♥</span>
+                            <span class="text-gray-700 text-sm leading-relaxed">الاعتزاز بالتراث المعماري التونسي والحضارة الإسلامية</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">♥</span>
+                            <span class="text-gray-700 text-sm leading-relaxed">الاهتمام بالمحافظة على المآثر التاريخية والمعالم المعمارية</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">♥</span>
+                            <span class="text-gray-700 text-sm leading-relaxed">تقدير التنوع الثقافي والتعايش بين مختلف الجماعات الدينية</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">♥</span>
+                            <span class="text-gray-700 text-sm leading-relaxed">الإحساس بالانتماء الوطني من خلال الاطلاع على تاريخ الوطن</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">♥</span>
+                            <span class="text-gray-700 text-sm leading-relaxed">احترام التعددية الثقافية والدينية في المجتمع التونسي</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">♥</span>
+                            <span class="text-gray-700 text-sm leading-relaxed">التحفيز على زيارة المتاحف والمواقع الأثرية</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-    </main>
+    <!-- Concepts Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-indigo-100 text-indigo-800 px-4 py-1 rounded-full text-sm font-medium mb-4">المفاهيم الأساسية</span>
+                <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4">شرح المفاهيم</h2>
+                <div class="section-divider"></div>
+            </div>
 
-    <footer class="text-center py-10 text-slate-500 text-sm">
-        إعداد الأستاذ: رياض سليمي - إعدادية الخشم - سيدي بوزيد - 2026/2027
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="highlight-box card-hover">
+                    <h4 class="font-bold text-amber-800 text-lg mb-3 flex items-center gap-2">
+                        <span class="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center text-amber-600">🕌</span>
+                        الحفصيون
+                    </h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">أسرة حاكمة تونسية أسسها أبو زكرياء الحفصي عام 625هـ/1228م، حكمت تونس قرابة ثلاثة قرون حتى 982هـ/1574م. اشتهرت بجعل تونس مركزاً ثقافياً وحضارياً مهماً في العالم الإسلامي.</p>
+                </div>
+                <div class="highlight-box card-hover">
+                    <h4 class="font-bold text-amber-800 text-lg mb-3 flex items-center gap-2">
+                        <span class="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center text-amber-600">🏛️</span>
+                        الحارة
+                    </h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">الوحدة السكنية الأساسية في المدينة الإسلامية، تتألف من مجموعة من الدور المتلاصقة تتخللها أزقة ضيقة ومتعرجة، ولها باب واحد يغلق ليلاً. تضم عادةً فرناناً وحانوتاً وماءً.</p>
+                </div>
+                <div class="highlight-box card-hover">
+                    <h4 class="font-bold text-amber-800 text-lg mb-3 flex items-center gap-2">
+                        <span class="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center text-amber-600">🏘️</span>
+                        الربض
+                    </h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">حي سكني يقع خارج الأسوار القديمة، تتشكل مع مرور الزمن بتوسع العمران حول المدينة القديمة. يتميز بأبنيته الأقل تنظيماً من المدينة الداخلية.</p>
+                </div>
+                <div class="highlight-box card-hover">
+                    <h4 class="font-bold text-amber-800 text-lg mb-3 flex items-center gap-2">
+                        <span class="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center text-amber-600">🏗️</span>
+                        الزاوية
+                    </h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">مبنى ديني صغير يضم قبر ولي أو شيخ صوفي، يُستخدم للعبادة والتعليم والاجتماع. تتميز بقبة أو مئذنة صغيرة وتكون مجاورة عادةً لمقبرة.</p>
+                </div>
+                <div class="highlight-box card-hover">
+                    <h4 class="font-bold text-amber-800 text-lg mb-3 flex items-center gap-2">
+                        <span class="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center text-amber-600">📚</span>
+                        المدرسة
+                    </h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">مؤسسة تعليمية دينية تتبع المسجد الجامع، خصصت لتدريس العلوم الشرعية والفقهية. تتكون من قاعة للتدريس وسكن للطلاب ومرافق صحية.</p>
+                </div>
+                <div class="highlight-box card-hover">
+                    <h4 class="font-bold text-amber-800 text-lg mb-3 flex items-center gap-2">
+                        <span class="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center text-amber-600">🏰</span>
+                        القصبة
+                    </h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">قلعة محصنة تقع في أعلى نقطة من المدينة، مقر الحكم والسلطة السياسية. تضم دار الإمارة والدواوين والثكنات العسكرية والمخازن.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Element 1: Architectural Components -->
+    <section id="element1" class="py-16 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-purple-100 text-purple-800 px-4 py-1 rounded-full text-sm font-medium mb-4">العنصر الأول</span>
+                <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4">المكونات المعمارية لمدينة تونس</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">موضع المدينة ومخططها الهندسي والتنوع العمراني في العهد الحفصي</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <!-- City Location and Plan -->
+            <div class="mb-16">
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+                    <div class="bg-gradient-to-r from-indigo-600 to-purple-700 px-8 py-6">
+                        <h3 class="text-2xl font-bold text-white flex items-center gap-3">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                            </svg>
+                            موضع مدينة تونس ومخططها الهندسي
+                        </h3>
+                    </div>
+                    <div class="p-8">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-bold text-gray-800 text-lg mb-4 flex items-center gap-2">
+                                    <span class="w-2 h-2 bg-indigo-500 rounded-full"></span>
+                                    موضع المدينة
+                                </h4>
+                                <div class="space-y-4 text-gray-700 leading-relaxed">
+                                    <p>
+                                        تقع مدينة تونس في <strong class="text-indigo-700">شمال شرق البلاد التونسية</strong>، على <strong class="text-indigo-700">الساحل الجنوبي لبحيرة تونس</strong> (بحيرة المرسى). يمتد موقعها بين البحر الأبيض المتوسط شمالاً والسهل التونسي جنوباً.
+                                    </p>
+                                    <p>
+                                        اختار الحفصيون مدينة تونس عاصمة لدولتهم نظراً لموقعها الجغرافي الاستراتيجي الذي يجمع بين:
+                                    </p>
+                                    <ul class="space-y-2 mr-6">
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-indigo-500 mt-1">◆</span>
+                                            <span><strong>موقع مينائي:</strong> كانت تونس مرتبطة بالبحر عبر حلق الوادي (قرطاج القديمة)، مما سهل التجارة البحرية</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-indigo-500 mt-1">◆</span>
+                                            <span><strong>موقع تجاري:</strong> ملتقى طرق القوافل التجارية بين إفريقية والمغرب وبلاد السودان</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-indigo-500 mt-1">◆</span>
+                                            <span><strong>موقع دفاعي:</strong> محاطة ببحيرة من الشمال والجبال من الجنوب الغربي</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-indigo-500 mt-1">◆</span>
+                                            <span><strong>موقع زراعي:</strong> تحيط بها أراضي زراعية خصبة توفر المؤن</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 text-lg mb-4 flex items-center gap-2">
+                                    <span class="w-2 h-2 bg-indigo-500 rounded-full"></span>
+                                    المخطط الهندسي
+                                </h4>
+                                <div class="space-y-4 text-gray-700 leading-relaxed">
+                                    <p>
+                                        يتميز مخطط مدينة تونس في العهد الحفصي بالشكل التالي:
+                                    </p>
+                                    <div class="info-callout p-4 rounded-xl">
+                                        <p class="text-sm"><strong>المدينة القديمة (المدينة العتيقة):</strong> شكلها غير منتظم، تتمركز حول المسجد الجامع (جامع الزيتونة) والأسواق الرئيسية. تتفرع منها أزقة ضيقة ومتعرجة تأخذ شكلاً عضوياً.</p>
+                                    </div>
+                                    <p>
+                                        يتألف المخطط من:
+                                    </p>
+                                    <ul class="space-y-2 mr-6">
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-purple-500 mt-1">●</span>
+                                            <span><strong>نواة المدينة:</strong> جامع الزيتونة كمركز روحي وتعليمي وتجاري</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-purple-500 mt-1">●</span>
+                                            <span><strong>السور الداخلي:</strong> يحيط بالمدينة القديمة</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-purple-500 mt-1">●</span>
+                                            <span><strong>السور الخارجي:</strong> يضم الأحياء الجديدة والأرباض</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-purple-500 mt-1">●</span>
+                                            <span><strong>القصبة:</strong> في الجهة الغربية كمركز للحكم</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Map Image -->
+                        <div class="mt-8 bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-6 border border-amber-200">
+                            <h4 class="font-bold text-amber-800 mb-4 text-center">مخطط مدينة تونس في العهد الحفصي</h4>
+                            <div class="relative bg-amber-100/50 rounded-xl overflow-hidden" style="min-height: 350px;">
+                                <svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+                                    <!-- Background -->
+                                    <rect width="800" height="500" fill="#fef3c7"/>
+                                    
+                                    <!-- Lake -->
+                                    <ellipse cx="400" cy="50" rx="350" ry="60" fill="#93c5fd" opacity="0.4"/>
+                                    <text x="400" y="55" text-anchor="middle" fill="#1e40af" font-size="14" font-weight="bold" font-family="Tajawal">بحيرة تونس</text>
+                                    
+                                    <!-- Outer Wall -->
+                                    <rect x="100" y="120" width="600" height="340" rx="20" fill="none" stroke="#92400e" stroke-width="3" stroke-dasharray="10,5"/>
+                                    <text x="700" y="250" fill="#92400e" font-size="11" font-family="Tajawal">السور الخارجي</text>
+                                    
+                                    <!-- Inner Wall -->
+                                    <rect x="200" y="160" width="400" height="260" rx="15" fill="none" stroke="#78350f" stroke-width="3"/>
+                                    <text x="610" y="200" fill="#78350f" font-size="11" font-family="Tajawal">السور الداخلي</text>
+                                    
+                                    <!-- Central Mosque -->
+                                    <rect x="350" y="240" width="100" height="70" rx="8" fill="#d97706" opacity="0.7"/>
+                                    <text x="400" y="280" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Tajawal">جامع الزيتونة</text>
+                                    
+                                    <!-- Kasbah -->
+                                    <rect x="210" y="270" width="80" height="60" rx="5" fill="#059669" opacity="0.7"/>
+                                    <text x="250" y="305" text-anchor="middle" fill="white" font-size="9" font-weight="bold" font-family="Tajawal">القصبة</text>
+                                    
+                                    <!-- Kasbah Mosque -->
+                                    <rect x="220" y="280" width="30" height="20" rx="3" fill="#047857" opacity="0.9"/>
+                                    
+                                    <!-- Markets -->
+                                    <rect x="380" y="320" width="60" height="40" rx="5" fill="#b45309" opacity="0.6"/>
+                                    <text x="410" y="345" text-anchor="middle" fill="white" font-size="9" font-family="Tajawal">الأسواق</text>
+                                    
+                                    <!-- Residential Areas -->
+                                    <rect x="260" y="170" width="60" height="50" rx="5" fill="#7c3aed" opacity="0.4"/>
+                                    <text x="290" y="200" text-anchor="middle" fill="white" font-size="8" font-family="Tajawal">حارات</text>
+                                    
+                                    <rect x="480" y="170" width="60" height="50" rx="5" fill="#7c3aed" opacity="0.4"/>
+                                    <text x="510" y="200" text-anchor="middle" fill="white" font-size="8" font-family="Tajawal">أرباض</text>
+                                    
+                                    <rect x="480" y="340" width="60" height="50" rx="5" fill="#7c3aed" opacity="0.4"/>
+                                    <text x="510" y="370" text-anchor="middle" fill="white" font-size="8" font-family="Tajawal">أرباض</text>
+                                    
+                                    <!-- Schools -->
+                                    <rect x="320" y="175" width="40" height="30" rx="5" fill="#2563eb" opacity="0.5"/>
+                                    <text x="340" y="195" text-anchor="middle" fill="white" font-size="8" font-family="Tajawal">مدارس</text>
+                                    
+                                    <!-- Cemeteries -->
+                                    <rect x="130" y="380" width="80" height="40" rx="5" fill="#6b7280" opacity="0.4"/>
+                                    <text x="170" y="405" text-anchor="middle" fill="white" font-size="8" font-family="Tajawal">مقابر</text>
+                                    
+                                    <rect x="590" y="380" width="80" height="40" rx="5" fill="#6b7280" opacity="0.4"/>
+                                    <text x="630" y="405" text-anchor="middle" fill="white" font-size="8" font-family="Tajawal">مقابر</text>
+                                    
+                                    <!-- Zawiyas -->
+                                    <circle cx="260" cy="350" r="15" fill="#dc2626" opacity="0.5"/>
+                                    <text x="260" y="355" text-anchor="middle" fill="white" font-size="7" font-family="Tajawal">زاوية</text>
+                                    
+                                    <circle cx="540" cy="280" r="15" fill="#dc2626" opacity="0.5"/>
+                                    <text x="540" y="285" text-anchor="middle" fill="white" font-size="7" font-family="Tajawal">زاوية</text>
+                                    
+                                    <!-- Gates -->
+                                    <rect x="145" y="285" width="20" height="15" rx="3" fill="#451a03"/>
+                                    <text x="145" y="320" text-anchor="middle" fill="#451a03" font-size="8" font-family="Tajawal">باب</text>
+                                    
+                                    <rect x="635" y="285" width="20" height="15" rx="3" fill="#451a03"/>
+                                    <text x="645" y="320" text-anchor="middle" fill="#451a03" font-size="8" font-family="Tajawal">باب</text>
+                                    
+                                    <rect x="390" y="450" width="20" height="15" rx="3" fill="#451a03"/>
+                                    <text x="400" y="480" text-anchor="middle" fill="#451a03" font-size="8" font-family="Tajawal">باب</text>
+                                    
+                                    <!-- Legend -->
+                                    <rect x="10" y="440" width="120" height="50" rx="5" fill="white" stroke="#d1d5db"/>
+                                    <text x="70" y="460" text-anchor="middle" fill="#374151" font-size="9" font-weight="bold" font-family="Tajawal">دليل الرسم</text>
+                                    <rect x="20" y="468" width="10" height="10" fill="#d97706" opacity="0.7"/>
+                                    <text x="35" y="477" fill="#374151" font-size="7" font-family="Tajawal">المساجد</text>
+                                    <rect x="80" y="468" width="10" height="10" fill="#7c3aed" opacity="0.4"/>
+                                    <text x="95" y="477" fill="#374151" font-size="7" font-family="Tajawal">الأحياء</text>
+                                </svg>
+                            </div>
+                            <p class="text-sm text-amber-700 mt-3 text-center italic">رسم توضيحي لمخطط مدينة تونس يبين توزيع المعالم والعناصر المعمارية الرئيسية</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Urban Diversity -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center">التنوع العمراني لمدينة تونس في العهد الحفصي</h3>
+                
+                <!-- Accordion Items -->
+                <div class="space-y-4">
+                    <!-- 1. Residential Areas -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+                        <div class="accordion-toggle px-6 py-5 flex items-center justify-between" onclick="toggleAccordion(this)">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-xl flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 text-lg">الأحياء السكنية: الحارات والأرباض</h4>
+                                    <p class="text-sm text-gray-500">الوحدة العمرانية الأساسية في المدينة الإسلامية</p>
+                                </div>
+                            </div>
+                            <svg class="w-6 h-6 text-gray-400 rotate-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="px-6 pb-6 border-t border-gray-100 pt-4">
+                                <div class="grid md:grid-cols-2 gap-8">
+                                    <div>
+                                        <h5 class="font-bold text-amber-700 mb-3">الحارات</h5>
+                                        <p class="text-gray-700 leading-relaxed mb-4">
+                                            الحارة هي <strong>الوحدة السكنية والاجتماعية الأساسية</strong> في المدينة الإسلامية التونسية. تتميز بالخصائص التالية:
+                                        </p>
+                                        <ul class="space-y-3">
+                                            <li class="flex items-start gap-3">
+                                                <span class="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
+                                                <span class="text-gray-700 text-sm"><strong>البنية:</strong> مجموعة من الدور المتلاصقة تفصل بينها أزقة ضيقة (1-3 أمتار عرضاً) ومظلمة تسمى "دروب" أو "سقايف"</span>
+                                            </li>
+                                            <li class="flex items-start gap-3">
+                                                <span class="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
+                                                <span class="text-gray-700 text-sm"><strong>الباب:</strong> لكل حارة باب خشبي كبير يغلق عند صلاة العشاء لضمان الأمن</span>
+                                            </li>
+                                            <li class="flex items-start gap-3">
+                                                <span class="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
+                                                <span class="text-gray-700 text-sm"><strong>المرافق:</strong> تضم الحارة مسبك (مسبحة) وماء وفرن وحانوت (محل تجاري)</span>
+                                            </li>
+                                            <li class="flex items-start gap-3">
+                                                <span class="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
+                                                <span class="text-gray-700 text-sm"><strong>التخطيط:</strong> منعطفات حادة وأزقة مسدودة (زنقة قتال) لأغراض دفاعية</span>
+                                            </li>
+                                            <li class="flex items-start gap-3">
+                                                <span class="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
+                                                <span class="text-gray-700 text-sm"><strong>التنظيم الاجتماعي:</strong> كان يقطنها أحياناً حرفيون من نفس المهنة أو جماعة دينية واحدة</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-bold text-amber-700 mb-3">الأرباض</h5>
+                                        <p class="text-gray-700 leading-relaxed mb-4">
+                                            الأرباض (جمع ربض) هي <strong>الأحياء التي نشأت خارج السور الداخلي</strong> مع توسع المدينة، وتتميز بما يلي:
+                                        </p>
+                                        <ul class="space-y-3">
+                                            <li class="flex items-start gap-3">
+                                                <span class="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
+                                                <span class="text-gray-700 text-sm"><strong>الموقع:</strong> تقع بين السور الداخلي والخارجي أو خارج السور الخارجي</span>
+                                            </li>
+                                            <li class="flex items-start gap-3">
+                                                <span class="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
+                                                <span class="text-gray-700 text-sm"><strong>النمو:</strong> نشأت تدريجياً مع زيادة السكان والتوسع العمراني</span>
+                                            </li>
+                                            <li class="flex items-start gap-3">
+                                                <span class="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
+                                                <span class="text-gray-700 text-sm"><strong>أمثلة:</strong> ربض المنار، ربض باب الجزيرة، ربض باب سعدون</span>
+                                            </li>
+                                            <li class="flex items-start gap-3">
+                                                <span class="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
+                                                <span class="text-gray-700 text-sm"><strong>الوظائف:</strong> سكنية وحرفية، تضم أسواقاً خاصة ببعض الحرف</span>
+                                            </li>
+                                        </ul>
+                                        
+                                        <!-- Image Placeholder -->
+                                        <div class="mt-6 bg-gradient-to-br from-amber-100 to-orange-100 rounded-xl p-4 text-center border border-amber-200">
+                                            <svg class="w-20 h-20 mx-auto text-amber-600 mb-2" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                            </svg>
+                                            <p class="text-amber-800 text-sm font-medium">صورة لحارة تونسية تونسية تقليدية</p>
+                                            <p class="text-amber-600 text-xs mt-1">أزقة ضيقة ومتعرجة مع أبواب خشبية</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Mosques -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+                        <div class="accordion-toggle px-6 py-5 flex items-center justify-between" onclick="toggleAccordion(this)">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-emerald-400 to-green-600 rounded-xl flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2L2 19h20L12 2zm0 4l6.5 11h-13L12 6z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 text-lg">المساجد</h4>
+                                    <p class="text-sm text-gray-500">مراكز العبادة والتعليم والاجتماع</p>
+                                </div>
+                            </div>
+                            <svg class="w-6 h-6 text-gray-400 rotate-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="px-6 pb-6 border-t border-gray-100 pt-4">
+                                <p class="text-gray-700 leading-relaxed mb-4">
+                                    شهدت مدينة تونس في العهد الحفصي ازدهاراً كبيراً في بناء المساجد، حيث كانت تعد <strong>مراكز العبادة والتعليم والقضاء والاجتماعات</strong>. تنقسم المساجد في تونس الحفصية إلى:
+                                </p>
+                                <div class="grid md:grid-cols-3 gap-4 mb-6">
+                                    <div class="bg-green-50 rounded-xl p-4 border border-green-200">
+                                        <h5 class="font-bold text-green-800 mb-2 text-sm">المسجد الجامع</h5>
+                                        <p class="text-gray-600 text-xs leading-relaxed">هو المسجد الكبير الذي تقام فيه صلاة الجمعة وخطبتها. في تونس كان جامع الزيتونة هو المسجد الجامع الرئيسي، إضافة إلى جامع القصبة.</p>
+                                    </div>
+                                    <div class="bg-green-50 rounded-xl p-4 border border-green-200">
+                                        <h5 class="font-bold text-green-800 mb-2 text-sm">مسجد الحي (مسجد الحومة)</h5>
+                                        <p class="text-gray-600 text-xs leading-relaxed">مساجد صغيرة منتشرة في الأحياء السكنية لإقامة الصلوات اليومية الخمس. كانت كل حارة أو مجموعة حارات تضم مسجداً.</p>
+                                    </div>
+                                    <div class="bg-green-50 rounded-xl p-4 border border-green-200">
+                                        <h5 class="font-bold text-green-800 mb-2 text-sm">المصلى</h5>
+                                        <p class="text-gray-600 text-xs leading-relaxed">أماكن مفتوحة خارج الأسوار مخصصة لصلاة العيدين (الفطر والأضحى) وصلاة الاستسقاء.</p>
+                                    </div>
+                                </div>
+                                <div class="info-callout p-4 rounded-xl">
+                                    <p class="text-sm text-gray-700"><strong>💡 معلومة مهمة:</strong> تشير بعض المصادر التاريخية إلى أن مدينة تونس في أوجها الحفصي كانت تضم أكثر من <strong>200 مسجد</strong> بين جامع وحي، مما يعكس الأهمية الدينية والروحية للمدينة.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Markets -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+                        <div class="accordion-toggle px-6 py-5 flex items-center justify-between" onclick="toggleAccordion(this)">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-yellow-400 to-amber-600 rounded-xl flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 text-lg">الأسواق</h4>
+                                    <p class="text-sm text-gray-500">ال centers التجارية والحرفية</p>
+                                </div>
+                            </div>
+                            <svg class="w-6 h-6 text-gray-400 rotate-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="px-6 pb-6 border-t border-gray-100 pt-4">
+                                <p class="text-gray-700 leading-relaxed mb-4">
+                                    كانت الأسواق تمثل <strong>الشريان الاقتصادي الرئيسي</strong> لمدينة تونس الحفصية. تم تخطيطها بعناية حول المسجد الجامع وفق نظام محكم يعكس التنظيم الاقتصادي الإسلامي.
+                                </p>
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <h5 class="font-bold text-amber-700 mb-3">تصنيف الأسواق حسب الموقع:</h5>
+                                        <ul class="space-y-2">
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-amber-500 mt-1">◆</span>
+                                                <span class="text-gray-700 text-sm"><strong>الأسواق الرئيسية:</strong> تقع حول جامع الزيتونة وتضم أهم الأنشطة التجارية (سوق الترك، سوق النحاسين، سوق البلاط...)</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-amber-500 mt-1">◆</span>
+                                                <span class="text-gray-700 text-sm"><strong>أسواق الجملة:</strong> كسوق البلاغجية وسوق الغنم لتجارة الجملة</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-amber-500 mt-1">◆</span>
+                                                <span class="text-gray-700 text-sm"><strong>أسواق الجوار:</strong> أسواق صغيرة داخل الأحياء السكنية</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-bold text-amber-700 mb-3">خصائص الأسواق:</h5>
+                                        <ul class="space-y-2">
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-amber-500 mt-1">◆</span>
+                                                <span class="text-gray-700 text-sm">مغطاة بأسقف خشبية أو قوسية للحماية من الشمس والأمطار</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-amber-500 mt-1">◆</span>
+                                                <span class="text-gray-700 text-sm">تجمع كل حرفة في سوق خاص (التخصص الحرفي)</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-amber-500 mt-1">◆</span>
+                                                <span class="text-gray-700 text-sm">تخضع لرقابة المحتسب (شرطة الأسواق)</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-amber-500 mt-1">◆</span>
+                                                <span class="text-gray-700 text-sm">ترتيبها يراعي قرب النظيف من المسجد</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <!-- Image -->
+                                <div class="mt-6 bg-gradient-to-br from-yellow-50 to-amber-50 rounded-xl p-4 text-center border border-yellow-200">
+                                    <svg class="w-24 h-24 mx-auto text-amber-600 mb-2" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20 4H4v2h16V4zm1 10v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6h1zm-9 4H6v-4h6v4z"/>
+                                    </svg>
+                                    <p class="text-amber-800 text-sm font-medium">سوق تونسي تقليدي في العهد الحفصي</p>
+                                    <p class="text-amber-600 text-xs mt-1">أسواق مغطاة متخصصة في الحرف التقليدية</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. Zawiyas -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+                        <div class="accordion-toggle px-6 py-5 flex items-center justify-between" onclick="toggleAccordion(this)">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-red-400 to-rose-600 rounded-xl flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 text-lg">الزوايا</h4>
+                                    <p class="text-sm text-gray-500">مراكز الصوفية والعبادة والتعليم</p>
+                                </div>
+                            </div>
+                            <svg class="w-6 h-6 text-gray-400 rotate-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="px-6 pb-6 border-t border-gray-100 pt-4">
+                                <p class="text-gray-700 leading-relaxed mb-4">
+                                    الزوايا هي <strong>مؤسسات دينية صوفية</strong> لعبت دوراً محورياً في الحياة الدينية والاجتماعية والتعليمية في تونس الحفصية. عادة ما تكون مبنية حول قبر شيخ أو ولي صالح.
+                                </p>
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <h5 class="font-bold text-red-700 mb-3">وظائف الزوايا:</h5>
+                                        <ul class="space-y-2">
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-red-500 mt-1">●</span>
+                                                <span class="text-gray-700 text-sm">تعليم القرآن والعلوم الشرعية</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-red-500 mt-1">●</span>
+                                                <span class="text-gray-700 text-sm">إقامة الذكر والأوراد الصوفية</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-red-500 mt-1">●</span>
+                                                <span class="text-gray-700 text-sm">إيواء الفقراء والمسافرين</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-red-500 mt-1">●</span>
+                                                <span class="text-gray-700 text-sm">توزيع الصدقات على المحتاجين</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-red-500 mt-1">●</span>
+                                                <span class="text-gray-700 text-sm">حل النزاعات والوساطة الاجتماعية</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-bold text-red-700 mb-3">أبرز الزوايا:</h5>
+                                        <ul class="space-y-2">
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-red-500 mt-1">●</span>
+                                                <span class="text-gray-700 text-sm">زاوية سيدي محرز (شمال المدينة)</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-red-500 mt-1">●</span>
+                                                <span class="text-gray-700 text-sm">زاوية سيدي بن عروس (وسط المدينة)</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-red-500 mt-1">●</span>
+                                                <span class="text-gray-700 text-sm">زاوية سيدي قاسم الجليزي (جنوب المدينة)</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-red-500 mt-1">●</span>
+                                                <span class="text-gray-700 text-sm">زاوية سيدي بوزيد</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. Cemeteries -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+                        <div class="accordion-toggle px-6 py-5 flex items-center justify-between" onclick="toggleAccordion(this)">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-gray-400 to-slate-600 rounded-xl flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 text-lg">المقابر: للمسلمين والنصارى واليهود</h4>
+                                    <p class="text-sm text-gray-500">تعكس التنوع الديني والتعايش في تونس الحفصية</p>
+                                </div>
+                            </div>
+                            <svg class="w-6 h-6 text-gray-400 rotate-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="px-6 pb-6 border-t border-gray-100 pt-4">
+                                <p class="text-gray-700 leading-relaxed mb-4">
+                                    تعكس المقابر في تونس الحفصية <strong>التعددية الدينية والتعايش</strong> بين مختلف الجماعات. كانت المقابر منظمة حسب الانتماء الديني:
+                                </p>
+                                <div class="grid md:grid-cols-3 gap-4">
+                                    <div class="bg-gray-50 rounded-xl p-4 border border-gray-200">
+                                        <h5 class="font-bold text-gray-800 mb-2 text-sm">مقابر المسلمين</h5>
+                                        <p class="text-gray-600 text-xs leading-relaxed">تقع حول الزوايا والأضرحة، تتضمن قبور الأولياء والصالحين. تتميز بالقباب والعمود (عمود منقوش عليه اسم الميت). كانت المقبرة الكبرى تقع جنوب المدينة.</p>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-xl p-4 border border-gray-200">
+                                        <h5 class="font-bold text-gray-800 mb-2 text-sm">مقابر النصارى</h5>
+                                        <p class="text-gray-600 text-xs leading-relaxed">خصصت للمسيحيين الأوروبيين (الأوروبيين المقيمين في تونس للتجارة). كانت تقع في منطقة منفصلة تسمى "فندق النصارى" قرب البحر.</p>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-xl p-4 border border-gray-200">
+                                        <h5 class="font-bold text-gray-800 mb-2 text-sm">مقابر اليهود</h5>
+                                        <p class="text-gray-600 text-xs leading-relaxed">كانت للجالية اليهودية التونسية. تقع خارج السور أو في حارة خاصة. تضم قبوراً بسيطة بعضها عليه كتابات بالعبرية.</p>
+                                    </div>
+                                </div>
+                                <div class="info-callout p-4 rounded-xl mt-4">
+                                    <p class="text-sm text-gray-700"><strong>📖 ملاحظة تاريخية:</strong> تواجد المقابر من مختلف الديانات في مدينة واحدة يدل على <strong>سياسة التسامح الديني</strong> التي انتهجها الحفصيون، حيث عاش المسلمون والنصارى واليهود في تناغم.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6. Walls -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+                        <div class="accordion-toggle px-6 py-5 flex items-center justify-between" onclick="toggleAccordion(this)">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-stone-400 to-stone-700 rounded-xl flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 text-lg">الأسوار: سور داخلي وسور خارجي</h4>
+                                    <p class="text-sm text-gray-500">الحصون الدفاعية لمدينة تونس</p>
+                                </div>
+                            </div>
+                            <svg class="w-6 h-6 text-gray-400 rotate-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="px-6 pb-6 border-t border-gray-100 pt-4">
+                                <div class="grid md:grid-cols-2 gap-8">
+                                    <div>
+                                        <h5 class="font-bold text-stone-700 mb-3">السور الداخلي</h5>
+                                        <p class="text-gray-700 leading-relaxed mb-3">
+                                            هو <strong>السور الأصلي القديم</strong> الذي يحيط بالمدينة القديمة (المدينة العتيقة). يعود أصله إلى العهد الأغلبي والزيري، ورممه الحفصيون.
+                                        </p>
+                                        <ul class="space-y-2">
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-stone-500 mt-1">■</span>
+                                                <span class="text-gray-700 text-sm">المحيط: حوالي 3.5 كيلومترات</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-stone-500 mt-1">■</span>
+                                                <span class="text-gray-700 text-sm">الأبواب: 7 أبواب رئيسية (باب البحر، باب سعدون، باب الجزيرة، باب الفلة، باب الخضراء، باب سويقة، باب منارة)</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-stone-500 mt-1">■</span>
+                                                <span class="text-gray-700 text-sm">الارتفاع: 6-8 أمتار مع أبراج مراقبة دائرية</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-stone-500 mt-1">■</span>
+                                                <span class="text-gray-700 text-sm">المادة: أحجار وطوب مدعم بخندق مائي</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-bold text-stone-700 mb-3">السور الخارجي</h5>
+                                        <p class="text-gray-700 leading-relaxed mb-3">
+                                            بنى الحفصيون <strong>سوراً خارجياً جديداً</strong> ليشمل الأرباض والأحياء الجديدة التي نشأت خارج السور القديم.
+                                        </p>
+                                        <ul class="space-y-2">
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-stone-500 mt-1">■</span>
+                                                <span class="text-gray-700 text-sm">المحيط: حوالي 6 كيلومترات</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-stone-500 mt-1">■</span>
+                                                <span class="text-gray-700 text-sm">الأبواب: 12 باباً أكبر وأكثر تحصيناً</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-stone-500 mt-1">■</span>
+                                                <span class="text-gray-700 text-sm">يضم أحياء جديدة: المنار، باب الجزيرة، باب سعدون</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-stone-500 mt-1">■</span>
+                                                <span class="text-gray-700 text-sm">بني في عهد أبي زكرياء وأبي حفص</span>
+                                            </li>
+                                        </ul>
+                                        
+                                        <!-- Image -->
+                                        <div class="mt-4 bg-gradient-to-br from-stone-100 to-stone-200 rounded-xl p-4 text-center border border-stone-300">
+                                            <svg class="w-20 h-20 mx-auto text-stone-600 mb-2" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M3 3h18v2H3V3zm0 4h18v2H3V7zm0 4h18v2H3v-2zm0 4h18v2H3v-2zm0 4h18v2H3v-2z"/>
+                                            </svg>
+                                            <p class="text-stone-800 text-sm font-medium">صورة لأسوار مدينة تونس القديمة</p>
+                                            <p class="text-stone-600 text-xs mt-1">بقايا السور الداخلي مع الأبراج</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7. Schools -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+                        <div class="accordion-toggle px-6 py-5 flex items-center justify-between" onclick="toggleAccordion(this)">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-indigo-600 rounded-xl flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 text-lg">المدارس</h4>
+                                    <p class="text-sm text-gray-500">مراكز التعليم العالي الإسلامي</p>
+                                </div>
+                            </div>
+                            <svg class="w-6 h-6 text-gray-400 rotate-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="px-6 pb-6 border-t border-gray-100 pt-4">
+                                <p class="text-gray-700 leading-relaxed mb-4">
+                                    المدارس هي <strong>مؤسسات للتعليم العالي</strong> تتبع المسجد الجامع، وتتخصص في تدريس العلوم الشرعية واللغوية. أنشئ الحفصيون عدة مدارس في تونس:
+                                </p>
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div class="bg-blue-50 rounded-xl p-4 border border-blue-200">
+                                        <h5 class="font-bold text-blue-800 mb-2 text-sm">المدرسة الشماعية</h5>
+                                        <p class="text-gray-600 text-xs leading-relaxed">بنيت عام 1244م في عهد أبي زكرياء الحفصي. تقع قرب جامع الزيتونة. تتميز بفناء مركزي محاط بأقواس ومعرض. كانت مخصصة لتدريس الفقه المالكي.</p>
+                                    </div>
+                                    <div class="bg-blue-50 rounded-xl p-4 border border-blue-200">
+                                        <h5 class="font-bold text-blue-800 mb-2 text-sm">المدرسة المرينية</h5>
+                                        <p class="text-gray-600 text-xs leading-relaxed">بنيت في عهد الحفصيين على الطراز المريني. تتميز بالزخارف الجصية المنحوتة والأقواس المفصصة.</p>
+                                    </div>
+                                    <div class="bg-blue-50 rounded-xl p-4 border border-blue-200">
+                                        <h5 class="font-bold text-blue-800 mb-2 text-sm">المدرسة الناصرية</h5>
+                                        <p class="text-gray-600 text-xs leading-relaxed">أسسها السلطان الحفصي الناصر. من أكبر المدارس وأكثرها اتساعاً. تتضمن قاعات للتدريس وسكناً للطلاب.</p>
+                                    </div>
+                                    <div class="bg-blue-50 rounded-xl p-4 border border-blue-200">
+                                        <h5 class="font-bold text-blue-800 mb-2 text-sm">المدرسة الحفصية</h5>
+                                        <p class="text-gray-600 text-xs leading-relaxed">مدرسة أخرى أنشأها الحفصيون. تتميز ببساطة التصميم مع لمسات زخرفية أندلسية.</p>
+                                    </div>
+                                </div>
+                                <div class="info-callout p-4 rounded-xl mt-4">
+                                    <p class="text-sm text-gray-700"><strong>📚 المناهج:</strong> تشمل العلوم القرآنية، الحديث النبوي، الفقه المالكي، أصول الفقه، النحو والصرف، المنطق، الأدب، والطب.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8. Kasbah -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+                        <div class="accordion-toggle px-6 py-5 flex items-center justify-between" onclick="toggleAccordion(this)">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-teal-400 to-cyan-600 rounded-xl flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 text-lg">القصبة</h4>
+                                    <p class="text-sm text-gray-500">مركز السلطة السياسية والعسكرية</p>
+                                </div>
+                            </div>
+                            <svg class="w-6 h-6 text-gray-400 rotate-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="px-6 pb-6 border-t border-gray-100 pt-4">
+                                <p class="text-gray-700 leading-relaxed mb-4">
+                                    القصبة هي <strong>القلعة المحصنة</strong> التي تقع في أعلى نقطة من الجهة الغربية لمدينة تونس، وهي <strong>مقر الحكم</strong> ومركز السلطة السياسية والعسكرية.
+                                </p>
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <h5 class="font-bold text-teal-700 mb-3">مكونات القصبة:</h5>
+                                        <ul class="space-y-2">
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-teal-500 mt-1">◆</span>
+                                                <span class="text-gray-700 text-sm"><strong>دار الإمارة:</strong> مقر السلطان ومسكنه الرسمي</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-teal-500 mt-1">◆</span>
+                                                <span class="text-gray-700 text-sm"><strong>الدواوين:</strong> الإدارات الحكومية المختلفة</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-teal-500 mt-1">◆</span>
+                                                <span class="text-gray-700 text-sm"><strong>الثكنات العسكرية:</strong> لإقامة الجيش والحامية</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-teal-500 mt-1">◆</span>
+                                                <span class="text-gray-700 text-sm"><strong>المخازن:</strong> للأسلحة والمؤن</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-teal-500 mt-1">◆</span>
+                                                <span class="text-gray-700 text-sm"><strong>جامع القصبة:</strong> مسجد خاص بالسلطان وحاشيته</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-teal-500 mt-1">◆</span>
+                                                <span class="text-gray-700 text-sm"><strong>السجن:</strong> سجن تحت الأرض للمسجونين</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-bold text-teal-700 mb-3">خصائص القصبة:</h5>
+                                        <ul class="space-y-2">
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-teal-500 mt-1">◆</span>
+                                                <span class="text-gray-700 text-sm">محاطة بسور محكم وأبراج مراقبة</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-teal-500 mt-1">◆</span>
+                                                <span class="text-gray-700 text-sm">تطل على المدينة من موقع مرتفع</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-teal-500 mt-1">◆</span>
+                                                <span class="text-gray-700 text-sm">تتصل بالسور الخارجي مباشرة</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-teal-500 mt-1">◆</span>
+                                                <span class="text-gray-700 text-sm">بابها الرئيسي يفتح على جهة المدينة</span>
+                                            </li>
+                                        </ul>
+                                        
+                                        <!-- Image -->
+                                        <div class="mt-4 bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-4 text-center border border-teal-200">
+                                            <svg class="w-20 h-20 mx-auto text-teal-600 mb-2" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M12 2L2 19h20L12 2zm0 4l6.5 11h-13L12 6z"/>
+                                            </svg>
+                                            <p class="text-teal-800 text-sm font-medium">صورة لقصبة مدينة تونس</p>
+                                            <p class="text-teal-600 text-xs mt-1">القلعة المحصنة مقر الحكم الحفصي</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Element 2: Landmark Studies -->
+    <section id="element2" class="py-16 bg-gradient-to-b from-white to-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-rose-100 text-rose-800 px-4 py-1 rounded-full text-sm font-medium mb-4">العنصر الثاني</span>
+                <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4">دراسة بعض معالم مدينة تونس</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">العمارة الدينية والمدنية والجنائزية</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <!-- Tabs -->
+            <div class="flex justify-center gap-3 mb-8 flex-wrap print-hide">
+                <button class="tab-btn active px-6 py-3 rounded-xl font-bold text-sm transition-all" onclick="showTab('religious')">العمارة الدينية</button>
+                <button class="tab-btn px-6 py-3 rounded-xl font-bold text-sm bg-gray-100 text-gray-600 transition-all" onclick="showTab('civil')">العمارة المدنية</button>
+                <button class="tab-btn px-6 py-3 rounded-xl font-bold text-sm bg-gray-100 text-gray-600 transition-all" onclick="showTab('funerary')">العمارة الجنائزية</button>
+                <button class="tab-btn px-6 py-3 rounded-xl font-bold text-sm bg-gray-100 text-gray-600 transition-all" onclick="showTab('table')">جدول المقارنة</button>
+            </div>
+
+            <!-- Religious Architecture Tab -->
+            <div id="tab-religious" class="tab-content active">
+                <div class="space-y-8">
+                    <!-- Kasbah Mosque -->
+                    <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+                        <div class="bg-gradient-to-r from-emerald-600 to-teal-700 px-8 py-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
+                                    <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2L2 19h20L12 2zm0 4l6.5 11h-13L12 6z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-bold text-white">جامع القصبة</h3>
+                                    <p class="text-emerald-100 text-sm">المسجد الحفصي الملكي - العمارة الدينية</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-8">
+                            <div class="grid md:grid-cols-2 gap-8">
+                                <div>
+                                    <h4 class="font-bold text-gray-800 text-lg mb-4 flex items-center gap-2">
+                                        <span class="w-2 h-2 bg-emerald-500 rounded-full"></span>
+                                        التعريف والتاريخ
+                                    </h4>
+                                    <p class="text-gray-700 leading-relaxed mb-4">
+                                        جامع القصبة هو <strong>المسجد الملكي</strong> لمدينة تونس، بناه السلطان <strong>أبو زكرياء الحفصي</strong> عام <strong>635هـ/1237م</strong> عند تأسيسه دولة الحفصيين. يقع داخل أسوار القصبة (القلعة) في الجهة الغربية من المدينة.
+                                    </p>
+                                    <h4 class="font-bold text-gray-800 text-lg mb-4 flex items-center gap-2 mt-6">
+                                        <span class="w-2 h-2 bg-emerald-500 rounded-full"></span>
+                                        الخصائص المعمارية
+                                    </h4>
+                                    <ul class="space-y-3">
+                                        <li class="flex items-start gap-3">
+                                            <span class="w-6 h-6 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs">1</span>
+                                            <span class="text-gray-700 text-sm"><strong>ال plan:</strong> يتبع نظام القاعة Hypostyle (قاعة الأعمدة)، بثلاث بلاطات موازية لجدار القبلة</span>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <span class="w-6 h-6 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs">2</span>
+                                            <span class="text-gray-700 text-sm"><strong>الأعمدة:</strong> أعمدة رخامية قديمة منقوقة من مبانٍ رومانية ( recycling )</span>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <span class="w-6 h-6 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs">3</span>
+                                            <span class="text-gray-700 text-sm"><strong>المحراب:</strong> محراب مزخرف بالجص المنقوش والزليج</span>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <span class="w-6 h-6 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs">4</span>
+                                            <span class="text-gray-700 text-sm"><strong>المئذنة:</strong> مئذنة مربعة الشكل تشبه مآذن إفريقية</span>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <span class="w-6 h-6 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs">5</span>
+                                            <span class="text-gray-700 text-sm"><strong>القبة:</strong> قبة صغيرة فوق المحراب تغطيها بلاطات خضراء</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 text-lg mb-4 flex items-center gap-2">
+                                        <span class="w-2 h-2 bg-emerald-500 rounded-full"></span>
+                                        التأثيرات الفنية
+                                    </h4>
+                                    <div class="space-y-4">
+                                        <div class="bg-emerald-50 rounded-xl p-4 border border-emerald-200">
+                                            <h5 class="font-bold text-emerald-800 text-sm mb-2">التأثير الأندلسي</h5>
+                                            <p class="text-gray-600 text-xs leading-relaxed">استخدام الزخارف النباتية المتشابكة (الأرابيسك)، والأقواس المفصصة، والبلاطات الخزفية (الزليج) ذات الأشكال الهندسية المعقدة.</p>
+                                        </div>
+                                        <div class="bg-emerald-50 rounded-xl p-4 border border-emerald-200">
+                                            <h5 class="font-bold text-emerald-800 text-sm mb-2">التأثير الزيري-الأغلبي</h5>
+                                            <p class="text-gray-600 text-xs leading-relaxed">اتباع نظام القاعة Hypostyle الشائع في عمارة إفريقية، واستخدام الأعمدة القديمة المأخوذة من المباني الرومانية.</p>
+                                        </div>
+                                        <div class="bg-emerald-50 rounded-xl p-4 border border-emerald-200">
+                                            <h5 class="font-bold text-emerald-800 text-sm mb-2">التأثير المغربي</h5>
+                                            <p class="text-gray-600 text-xs leading-relaxed">بعض العناصر الزخرفية المتأثرة بالعمارة المرينية في المغرب الأقصى.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Image -->
+                                    <div class="mt-6 bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl p-4 text-center border border-emerald-200">
+                                        <div class="mosque-dome mb-3"></div>
+                                        <p class="text-emerald-800 text-sm font-bold">جامع القصبة</p>
+                                        <p class="text-emerald-600 text-xs mt-1">المسجد الملكي الحفصي - 1237م</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Zitouna Mosque -->
+                    <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+                        <div class="bg-gradient-to-r from-amber-600 to-orange-700 px-8 py-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
+                                    <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2L2 19h20L12 2zm0 4l6.5 11h-13L12 6z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-bold text-white">جامع الزيتونة</h3>
+                                    <p class="text-amber-100 text-sm">المسجد الجامع الأعظم - ثاني أقدم جامع في إفريقية</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-8">
+                            <div class="grid md:grid-cols-2 gap-8">
+                                <div>
+                                    <h4 class="font-bold text-gray-800 text-lg mb-4 flex items-center gap-2">
+                                        <span class="w-2 h-2 bg-amber-500 rounded-full"></span>
+                                        التعريف والتاريخ
+                                    </h4>
+                                    <p class="text-gray-700 leading-relaxed mb-4">
+                                        جامع الزيتونة هو <strong>أعظم مساجد مدينة تونس</strong> و<strong>ثاني أقدم جامع</strong> في إفريقية بعد جامع عقبة بن نافع بالقيروان. أسسه <strong>الحسن بن النعمان</strong> عام <strong>79هـ/698م</strong> وأتم بناءه <strong>ال governor حسان بن النعمان</strong>. رممه ووسّعه الحفصيون بشكل كبير.
+                                    </p>
+                                    <h4 class="font-bold text-gray-800 text-lg mb-4 flex items-center gap-2 mt-6">
+                                        <span class="w-2 h-2 bg-amber-500 rounded-full"></span>
+                                        الخصائص المعمارية
+                                    </h4>
+                                    <ul class="space-y-3">
+                                        <li class="flex items-start gap-3">
+                                            <span class="text-amber-500 mt-1">◆</span>
+                                            <span class="text-gray-700 text-sm"><strong>المساحة:</strong> حوالي 5000 م²، من أكبر المساجد في تونس</span>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <span class="text-amber-500 mt-1">◆</span>
+                                            <span class="text-gray-700 text-sm"><strong>الأعمدة:</strong> 160 عموداً رخامياً معظمها مأخود من قرطاج الرومانية</span>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <span class="text-amber-500 mt-1">◆</span>
+                                            <span class="text-gray-700 text-sm"><strong>الأروقة:</strong> 9 أروقة موازية لجدار القبلة</span>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <span class="text-amber-500 mt-1">◆</span>
+                                            <span class="text-gray-700 text-sm"><strong>المحراب:</strong> محراب من الرخام المنقوش محاط بزخارف جصية</span>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <span class="text-amber-500 mt-1">◆</span>
+                                            <span class="text-gray-700 text-sm"><strong>المئذنة:</strong> مئذنة مربعة بسيطة ارتفاعها 44 متراً</span>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <span class="text-amber-500 mt-1">◆</span>
+                                            <span class="text-gray-700 text-sm"><strong>الفناء:</strong> فناء مركزي (صحن) مبلط بالرخام</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 text-lg mb-4 flex items-center gap-2">
+                                        <span class="w-2 h-2 bg-amber-500 rounded-full"></span>
+                                        التوسعات الحفصية
+                                    </h4>
+                                    <div class="bg-amber-50 rounded-xl p-4 border border-amber-200 mb-4">
+                                        <p class="text-gray-700 text-sm leading-relaxed">
+                                            قام الحفصيون بتوسعات وترميمات عديدة لجامع الزيتونة:
+                                        </p>
+                                        <ul class="space-y-2 mt-3">
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-amber-600 mt-1">•</span>
+                                                <span class="text-gray-600 text-xs">أبو زكرياء: بناء قبة المحراب الجديدة وزخرفتها</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-amber-600 mt-1">•</span>
+                                                <span class="text-gray-600 text-xs">أبو حفص: إضافة أروقة جديدة وترميم السقف</span>
+                                            </li>
+                                            <li class="flex items-start gap-2">
+                                                <span class="text-amber-600 mt-1">•</span>
+                                                <span class="text-gray-600 text-xs">المستنصر: بناء الميضأة الخارجية</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <h4 class="font-bold text-gray-800 text-lg mb-4 flex items-center gap-2">
+                                        <span class="w-2 h-2 bg-amber-500 rounded-full"></span>
+                                        التأثيرات الفنية
+                                    </h4>
+                                    <ul class="space-y-2">
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-amber-500 mt-1">◆</span>
+                                            <span class="text-gray-700 text-sm">تأثير أغلبي-زيري في الأساسات والتخطيط</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-amber-500 mt-1">◆</span>
+                                            <span class="text-gray-700 text-sm">تأثير أندلسي في الزخارف والمحراب</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-amber-500 mt-1">◆</span>
+                                            <span class="text-gray-700 text-sm">تأثير حفصي في التوسعات والترميمات</span>
+                                        </li>
+                                    </ul>
+                                    
+                                    <!-- Image -->
+                                    <div class="mt-6 bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-4 text-center border border-amber-200">
+                                        <div class="flex justify-center gap-4 mb-3">
+                                            <div class="minaret"></div>
+                                            <div class="mosque-dome" style="width: 100px; height: 50px;"></div>
+                                            <div class="minaret"></div>
+                                        </div>
+                                        <p class="text-amber-800 text-sm font-bold">جامع الزيتونة</p>
+                                        <p class="text-amber-600 text-xs mt-1">أعظم مساجد تونس - 698م</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sultan's Ablution House -->
+                    <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+                        <div class="bg-gradient-to-r from-cyan-600 to-blue-700 px-8 py-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
+                                    <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M5 2a2 2 0 00-2 2v14l3.5-2 3.5 2 3.5-2 3.5 2V4a2 2 0 00-2-2H5zm4.707 3.707a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L8.414 9H10a3 3 0 013 3v1a1 1 0 102 0v-1a5 5 0 00-5-5H8.414l1.293-1.293z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-bold text-white">ميضأة السلطان</h3>
+                                    <p class="text-cyan-100 text-sm">المرافق الصحية للمسجد - العمارة الدينية</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-8">
+                            <div class="grid md:grid-cols-2 gap-8">
+                                <div>
+                                    <h4 class="font-bold text-gray-800 text-lg mb-4 flex items-center gap-2">
+                                        <span class="w-2 h-2 bg-cyan-500 rounded-full"></span>
+                                        التعريف والتاريخ
+                                    </h4>
+                                    <p class="text-gray-700 leading-relaxed mb-4">
+                                        الميضأة هي <strong>المكان المخصص للوضوء</strong> المتصل بالمسجد. بناها السلطان <strong>أبو يحيى زكريا</strong> (المستنصر) عام <strong>1282م</strong> كجزء من توسعة جامع الزيتونة. تقع في الجهة الغربية من المسجد.
+                                    </p>
+                                    <h4 class="font-bold text-gray-800 text-lg mb-4 flex items-center gap-2 mt-6">
+                                        <span class="w-2 h-2 bg-cyan-500 rounded-full"></span>
+                                        الخصائص المعمارية
+                                    </h4>
+                                    <ul class="space-y-3">
+                                        <li class="flex items-start gap-3">
+                                            <span class="text-cyan-500 mt-1">◆</span>
+                                            <span class="text-gray-700 text-sm"><strong>التصميم:</strong> بناء مربع الشكل يتوسطه فناء مكشوف</span>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <span class="text-cyan-500 mt-1">◆</span>
+                                            <span class="text-gray-700 text-sm"><strong>النوافير:</strong> حوض مركزي كبير يتدفق منه الماء عبر أنابيب</span>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <span class="text-cyan-500 mt-1">◆</span>
+                                            <span class="text-gray-700 text-sm"><strong>الأعمدة:</strong> أعمدة رخامية بأقواس حدوة الحصان</span>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <span class="text-cyan-500 mt-1">◆</span>
+                                            <span class="text-gray-700 text-sm"><strong>الزخرفة:</strong> بلاطات زليج ونقوش جصية</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 text-lg mb-4 flex items-center gap-2">
+                                        <span class="w-2 h-2 bg-cyan-500 rounded-full"></span>
+                                        التأثيرات الفنية
+                                    </h4>
+                                    <div class="space-y-4">
+                                        <div class="bg-cyan-50 rounded-xl p-4 border border-cyan-200">
+                                            <h5 class="font-bold text-cyan-800 text-sm mb-2">التأثير الأندلسي-المغربي</h5>
+                                            <p class="text-gray-600 text-xs leading-relaxed">استخدام الزليج (البلاطات الخزفية الملونة) بأشكال هندسية معقدة، والأقواس المفصصة، والنقوش الكتابية بالخط الكوفي.</p>
+                                        </div>
+                                        <div class="bg-cyan-50 rounded-xl p-4 border border-cyan-200">
+                                            <h5 class="font-bold text-cyan-800 text-sm mb-2">التأثير الحفصي</h5>
+                                            <p class="text-gray-600 text-xs leading-relaxed">البساطة في التصميم مع الحفاظ على الجودة في التنفيذ، وعناية خاصة بالعناصر الصحية والنظافة.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Image -->
+                                    <div class="mt-6 bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl p-4 text-center border border-cyan-200">
+                                        <svg class="w-24 h-24 mx-auto text-cyan-600 mb-2" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                                        </svg>
+                                        <p class="text-cyan-800 text-sm font-bold">ميضأة السلطان</p>
+                                        <p class="text-cyan-600 text-xs mt-1">مرافق الوضوء - 1282م</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Civil Architecture Tab -->
+            <div id="tab-civil" class="tab-content">
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+                    <div class="bg-gradient-to-r from-indigo-600 to-purple-700 px-8 py-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
+                                <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">المدرسة الشماعية</h3>
+                                <p class="text-indigo-100 text-sm">أقدم مدرسة حفصية - العمارة المدنية</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-bold text-gray-800 text-lg mb-4 flex items-center gap-2">
+                                    <span class="w-2 h-2 bg-indigo-500 rounded-full"></span>
+                                    التعريف والتاريخ
+                                </h4>
+                                <p class="text-gray-700 leading-relaxed mb-4">
+                                    المدرسة الشماعية هي <strong>أقدم مدرسة حفصية</strong> في مدينة تونس، بناها الوزير <strong>أبو عبد الله محمد الشماع</strong> عام <strong>643هـ/1245م</strong> بأمر من السلطان أبي زكرياء الحفصي. تقع في <strong>شارع الباشا</strong> قرب جامع الزيتونة.
+                                </p>
+                                <h4 class="font-bold text-gray-800 text-lg mb-4 flex items-center gap-2 mt-6">
+                                    <span class="w-2 h-2 bg-indigo-500 rounded-full"></span>
+                                    الخصائص المعمارية
+                                </h4>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start gap-3">
+                                        <span class="w-6 h-6 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs">1</span>
+                                        <span class="text-gray-700 text-sm"><strong>الفناء:</strong> فناء مركزي مربع محاط بأقواس من أربع جهات</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="w-6 h-6 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs">2</span>
+                                        <span class="text-gray-700 text-sm"><strong>القاعات:</strong> قاعة للتدريس في الجهة الجنوبية (نحو القبلة)</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="w-6 h-6 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs">3</span>
+                                        <span class="text-gray-700 text-sm"><strong>السكن:</strong> غرف في الطابق العلوي لإقامة الطلاب</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="w-6 h-6 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs">4</span>
+                                        <span class="text-gray-700 text-sm"><strong>المرافق:</strong> مطبخ ومرحاض ومخزن</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="w-6 h-6 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs">5</span>
+                                        <span class="text-gray-700 text-sm"><strong>الباب:</strong> باب خشبي منقوش يعلوه قوس حدوة الحصان</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 text-lg mb-4 flex items-center gap-2">
+                                    <span class="w-2 h-2 bg-indigo-500 rounded-full"></span>
+                                    المكونات المعمارية
+                                </h4>
+                                <div class="bg-indigo-50 rounded-xl p-4 border border-indigo-200 mb-6">
+                                    <ul class="space-y-2">
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-indigo-600 mt-1">◆</span>
+                                            <span class="text-gray-700 text-sm"><strong>البهو:</strong> مدخل يفضي إلى الفناء</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-indigo-600 mt-1">◆</span>
+                                            <span class="text-gray-700 text-sm"><strong>الفناء:</strong> ساحة مكشوفة في الوسط</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-indigo-600 mt-1">◆</span>
+                                            <span class="text-gray-700 text-sm"><strong>الأروقة:</strong> أقواس محملة على أعمدة</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-indigo-600 mt-1">◆</span>
+                                            <span class="text-gray-700 text-sm"><strong>المحراب:</strong> في قاعة التدريس</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <span class="text-indigo-600 mt-1">◆</span>
+                                            <span class="text-gray-700 text-sm"><strong>المئذنة:</strong> صغيرة الحجم</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <h4 class="font-bold text-gray-800 text-lg mb-4 flex items-center gap-2">
+                                    <span class="w-2 h-2 bg-indigo-500 rounded-full"></span>
+                                    التأثيرات الفنية
+                                </h4>
+                                <div class="space-y-3">
+                                    <div class="bg-indigo-50 rounded-xl p-4 border border-indigo-200">
+                                        <h5 class="font-bold text-indigo-800 text-sm mb-2">التأثير الأندلسي</h5>
+                                        <p class="text-gray-600 text-xs leading-relaxed">الأقواس المفصصة، الزخارف النباتية، البلاطات الخزفية الملونة (الزليج)، النقوش الكتابية بالخط الكوفي والثلث.</p>
+                                    </div>
+                                    <div class="bg-indigo-50 rounded-xl p-4 border border-indigo-200">
+                                        <h5 class="font-bold text-indigo-800 text-sm mb-2">التأثير الزيري</h5>
+                                        <p class="text-gray-600 text-xs leading-relaxed">استخدام الأقواس الحدوية والعمود كعنصر إنشائي رئيسي.</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Image -->
+                                <div class="mt-6 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-4 text-center border border-indigo-200">
+                                    <svg class="w-24 h-24 mx-auto text-indigo-600 mb-2" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+                                    </svg>
+                                    <p class="text-indigo-800 text-sm font-bold">المدرسة الشماعية</p>
+                                    <p class="text-indigo-600 text-xs mt-1">أقدم مدرسة حفصية - 1245م</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Funerary Architecture Tab -->
+            <div id="tab-funerary" class="tab-content">
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+                    <div class="bg-gradient-to-r from-purple-600 to-pink-700 px-8 py-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
+                                <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">زاوية سيدي قاسم الجليزي</h3>
+                                <p class="text-purple-100 text-sm">العمارة الجنائزية الصوفية</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-bold text-gray-800 text-lg mb-4 flex items-center gap-2">
+                                    <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                                    التعريف والتاريخ
+                                </h4>
+                                <p class="text-gray-700 leading-relaxed mb-4">
+                                    زاوية سيدي قاسم الجليزي هي <strong>أحد أهم المعالم الجنائزية الصوفية</strong> في مدينة تونس. بنيت فوق قبر الولي الصوفي <strong>سيدي قاسم الجليزي</strong> الذي وفد من الأندلس وتوفي في تونس عام <strong>668هـ/1269م</strong>. تقع الزاوية في <strong>الجهة الجنوبية من المدينة</strong>.
+                                </p>
+                                
+                                <h4 class="font-bold text-gray-800 text-lg mb-4 flex items-center gap-2 mt-6">
+                                    <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                                    الشكل والبنية
+                                </h4>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start gap-3">
+                                        <span class="w-6 h-6 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs">1</span>
+                                        <span class="text-gray-700 text-sm"><strong>الشكل العام:</strong> بناء مربع الشكل يعلوه قبة هرمية مزينة بالقرميد الملون</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="w-6 h-6 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs">2</span>
+                                        <span class="text-gray-700 text-sm"><strong>القبة الهرمية:</strong> قبة مخروطية الشكل (هرمية) تتميز عن القباب نصف الكروية الشائعة</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="w-6 h-6 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs">3</span>
+                                        <span class="text-gray-700 text-sm"><strong>القرميد:</strong> بلاطات خزفية ملونة (أخضر وأصفر وبني) تغطي سطح القبة</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="w-6 h-6 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs">4</span>
+                                        <span class="text-gray-700 text-sm"><strong>الجليز:</strong> طبقة لامعة من الطلاء السيراميكي تغطي بعض الأجزاء</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 text-lg mb-4 flex items-center gap-2">
+                                    <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                                    العناصر الزخرفية
+                                </h4>
+                                <div class="space-y-4 mb-6">
+                                    <div class="bg-purple-50 rounded-xl p-4 border border-purple-200">
+                                        <h5 class="font-bold text-purple-800 text-sm mb-2">القبة الهرمية</h5>
+                                        <p class="text-gray-600 text-xs leading-relaxed">شكل هرمي (مخروطي) غير شائع في عمارة إفريقية، يعكس تأثيرات شرقية أو أندلسية. ترتفع فوق بناء مربع وتغطى بقرميد ملون.</p>
+                                    </div>
+                                    <div class="bg-purple-50 rounded-xl p-4 border border-purple-200">
+                                        <h5 class="font-bold text-purple-800 text-sm mb-2">القرميد</h5>
+                                        <p class="text-gray-600 text-xs leading-relaxed">بلاطات خزفية ملونة (أخضر وأصفر وبني) مرتبة بأشكال هندسية. تقنية مستوردة من الأندلس تعطي مظهراً جمالياً مميزاً.</p>
+                                    </div>
+                                    <div class="bg-purple-50 rounded-xl p-4 border border-purple-200">
+                                        <h5 class="font-bold text-purple-800 text-sm mb-2">الجليز</h5>
+                                        <p class="text-gray-600 text-xs leading-relaxed">طلاء سيراميكي لامع يوضع على السطوح الخزفية ليحميها ويمنحها بريقاً مميزاً. تقنية أندلسية بامتياز.</p>
+                                    </div>
+                                </div>
+                                
+                                <h4 class="font-bold text-gray-800 text-lg mb-4 flex items-center gap-2">
+                                    <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                                    التأثيرات الفنية المعمارية
+                                </h4>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-purple-500 mt-1">◆</span>
+                                        <span class="text-gray-700 text-sm"><strong>التأثير الأندلسي:</strong> القرميد الملون، الجليز، الزخارف النباتية</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-purple-500 mt-1">◆</span>
+                                        <span class="text-gray-700 text-sm"><strong>التأثير الشرقي:</strong> شكل القبة الهرمية</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-purple-500 mt-1">◆</span>
+                                        <span class="text-gray-700 text-sm"><strong>التأثير الحفصي:</strong> البساطة في التصميم والاهتمام بالعناصر الجمالية</span>
+                                    </li>
+                                </ul>
+                                
+                                <!-- Image -->
+                                <div class="mt-6 bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 text-center border border-purple-200">
+                                    <svg width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg" class="mx-auto mb-3">
+                                        <!-- Base -->
+                                        <rect x="20" y="90" width="80" height="50" rx="3" fill="#8b5cf6" opacity="0.3"/>
+                                        <rect x="20" y="90" width="80" height="50" rx="3" stroke="#8b5cf6" stroke-width="2" fill="none"/>
+                                        
+                                        <!-- Pyramid Dome -->
+                                        <polygon points="60,10 20,90 100,90" fill="#a78bfa" opacity="0.4"/>
+                                        <polygon points="60,10 20,90 100,90" stroke="#8b5cf6" stroke-width="2" fill="none"/>
+                                        
+                                        <!-- Dome Lines -->
+                                        <line x1="60" y1="10" x2="60" y2="90" stroke="#8b5cf6" stroke-width="1" opacity="0.5"/>
+                                        <line x1="60" y1="10" x2="40" y2="90" stroke="#8b5cf6" stroke-width="1" opacity="0.5"/>
+                                        <line x1="60" y1="10" x2="80" y2="90" stroke="#8b5cf6" stroke-width="1" opacity="0.5"/>
+                                        
+                                        <!-- Tiles -->
+                                        <rect x="35" y="60" width="8" height="6" fill="#10b981" opacity="0.5"/>
+                                        <rect x="45" y="50" width="8" height="6" fill="#f59e0b" opacity="0.5"/>
+                                        <rect x="55" y="40" width="8" height="6" fill="#10b981" opacity="0.5"/>
+                                        <rect x="65" y="50" width="8" height="6" fill="#f59e0b" opacity="0.5"/>
+                                        <rect x="75" y="60" width="8" height="6" fill="#10b981" opacity="0.5"/>
+                                        
+                                        <!-- Door -->
+                                        <rect x="48" y="105" width="24" height="35" rx="12" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+                                        
+                                        <!-- Crescent -->
+                                        <circle cx="60" cy="5" r="5" fill="#f59e0b"/>
+                                        <circle cx="58" cy="4" r="4" fill="#fef3c7"/>
+                                    </svg>
+                                    <p class="text-purple-800 text-sm font-bold">زاوية سيدي قاسم الجليزي</p>
+                                    <p class="text-purple-600 text-xs mt-1">القبة الهرمية المزينة بالقرميد الملون - 1269م</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comparison Table Tab -->
+            <div id="tab-table" class="tab-content">
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+                    <div class="bg-gradient-to-r from-gray-800 to-gray-900 px-8 py-6">
+                        <h3 class="text-2xl font-bold text-white text-center">جدول مقارنة المعالم المعمارية لمدينة تونس في العهد الحفصي</h3>
+                    </div>
+                    <div class="p-8">
+                        <div class="table-responsive">
+                            <table class="w-full border-collapse">
+                                <thead>
+                                    <tr>
+                                        <th class="bg-gradient-to-r from-amber-500 to-orange-600 text-white px-4 py-4 text-center font-bold text-sm rounded-tr-none">المعلم المعماري</th>
+                                        <th class="bg-gradient-to-r from-amber-500 to-orange-600 text-white px-4 py-4 text-center font-bold text-sm">النوع</th>
+                                        <th class="bg-gradient-to-r from-amber-500 to-orange-600 text-white px-4 py-4 text-center font-bold text-sm">الوظيفة</th>
+                                        <th class="bg-gradient-to-r from-amber-500 to-orange-600 text-white px-4 py-4 text-center font-bold text-sm">التاريخ</th>
+                                        <th class="bg-gradient-to-r from-amber-500 to-orange-600 text-white px-4 py-4 text-center font-bold text-sm">التأثيرات الفنية المعمارية</th>
+                                        <th class="bg-gradient-to-r from-amber-500 to-orange-600 text-white px-4 py-4 text-center font-bold text-sm rounded-tl-none">خصائص مميزة</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="hover:bg-amber-50 transition-colors">
+                                        <td class="border border-gray-200 px-4 py-4 font-bold text-amber-800 text-center text-sm">جامع القصبة</td>
+                                        <td class="border border-gray-200 px-4 py-4 text-center text-sm">
+                                            <span class="bg-emerald-100 text-emerald-800 px-2 py-1 rounded-full text-xs font-medium">ديني</span>
+                                        </td>
+                                        <td class="border border-gray-200 px-4 py-4 text-center text-sm text-gray-700">مسجد ملكي - صلاة السلطان وحاشيته</td>
+                                        <td class="border border-gray-200 px-4 py-4 text-center text-sm text-gray-700">635هـ / 1237م</td>
+                                        <td class="border border-gray-200 px-4 py-4 text-sm text-gray-700">
+                                            <ul class="space-y-1">
+                                                <li>• أندلسي (زخارف نباتية)</li>
+                                                <li>• زيري-أغلبي (نظام القاعة)</li>
+                                                <li>• مغربي (أرابيسك)</li>
+                                            </ul>
+                                        </td>
+                                        <td class="border border-gray-200 px-4 py-4 text-sm text-gray-700">
+                                            <ul class="space-y-1">
+                                                <li>• أعمدة رخامية مأخودة من قرطاج</li>
+                                                <li>• محراب مزخرف بالجص والزليج</li>
+                                                <li>• مئذنة مربعة</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-amber-50 transition-colors bg-gray-50">
+                                        <td class="border border-gray-200 px-4 py-4 font-bold text-amber-800 text-center text-sm">جامع الزيتونة</td>
+                                        <td class="border border-gray-200 px-4 py-4 text-center text-sm">
+                                            <span class="bg-emerald-100 text-emerald-800 px-2 py-1 rounded-full text-xs font-medium">ديني</span>
+                                        </td>
+                                        <td class="border border-gray-200 px-4 py-4 text-center text-sm text-gray-700">مسجد جامع - صلاة الجمعة وخطبتها</td>
+                                        <td class="border border-gray-200 px-4 py-4 text-center text-sm text-gray-700">698م (توسّع حفصي)</td>
+                                        <td class="border border-gray-200 px-4 py-4 text-sm text-gray-700">
+                                            <ul class="space-y-1">
+                                                <li>• أغلبي-زيري (نظام القاعة)</li>
+                                                <li>• أندلسي (المحراب والزخارف)</li>
+                                                <li>• حفصي (التوسعات)</li>
+                                            </ul>
+                                        </td>
+                                        <td class="border border-gray-200 px-4 py-4 text-sm text-gray-700">
+                                            <ul class="space-y-1">
+                                                <li>• 160 عموداً رخامياً</li>
+                                                <li>• 9 أروقة</li>
+                                                <li>• مساحة 5000 م²</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-amber-50 transition-colors">
+                                        <td class="border border-gray-200 px-4 py-4 font-bold text-amber-800 text-center text-sm">ميضأة السلطان</td>
+                                        <td class="border border-gray-200 px-4 py-4 text-center text-sm">
+                                            <span class="bg-emerald-100 text-emerald-800 px-2 py-1 rounded-full text-xs font-medium">ديني</span>
+                                        </td>
+                                        <td class="border border-gray-200 px-4 py-4 text-center text-sm text-gray-700">مرافق صحية للوضوء</td>
+                                        <td class="border border-gray-200 px-4 py-4 text-center text-sm text-gray-700">1282م</td>
+                                        <td class="border border-gray-200 px-4 py-4 text-sm text-gray-700">
+                                            <ul class="space-y-1">
+                                                <li>• أندلسي-مغربي (زليج)</li>
+                                                <li>• حفصي (بساطة)</li>
+                                                <li>• كتابي (كوفي)</li>
+                                            </ul>
+                                        </td>
+                                        <td class="border border-gray-200 px-4 py-4 text-sm text-gray-700">
+                                            <ul class="space-y-1">
+                                                <li>• فناء مركزي مبلط</li>
+                                                <li>• نوافير للمياه</li>
+                                                <li>• بلاطات زليج ملونة</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-amber-50 transition-colors bg-gray-50">
+                                        <td class="border border-gray-200 px-4 py-4 font-bold text-amber-800 text-center text-sm">المدرسة الشماعية</td>
+                                        <td class="border border-gray-200 px-4 py-4 text-center text-sm">
+                                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">مدني</span>
+                                        </td>
+                                        <td class="border border-gray-200 px-4 py-4 text-center text-sm text-gray-700">مدرسة للتعليم العالي الديني</td>
+                                        <td class="border border-gray-200 px-4 py-4 text-center text-sm text-gray-700">643هـ / 1245م</td>
+                                        <td class="border border-gray-200 px-4 py-4 text-sm text-gray-700">
+                                            <ul class="space-y-1">
+                                                <li>• أندلسي (أقواس مفصصة)</li>
+                                                <li>• زيري (عمود)</li>
+                                                <li>• كتابي (كوفي وثلث)</li>
+                                            </ul>
+                                        </td>
+                                        <td class="border border-gray-200 px-4 py-4 text-sm text-gray-700">
+                                            <ul class="space-y-1">
+                                                <li>• فناء مركزي محاط بأقواس</li>
+                                                <li>• سكن للطلاب</li>
+                                                <li>• بلاطات زليج</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-amber-50 transition-colors">
+                                        <td class="border border-gray-200 px-4 py-4 font-bold text-amber-800 text-center text-sm">زاوية سيدي قاسم الجليزي</td>
+                                        <td class="border border-gray-200 px-4 py-4 text-center text-sm">
+                                            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-medium">جنائزي</span>
+                                        </td>
+                                        <td class="border border-gray-200 px-4 py-4 text-center text-sm text-gray-700">مزار صوفي - عبادة وتعليم</td>
+                                        <td class="border border-gray-200 px-4 py-4 text-center text-sm text-gray-700">668هـ / 1269م</td>
+                                        <td class="border border-gray-200 px-4 py-4 text-sm text-gray-700">
+                                            <ul class="space-y-1">
+                                                <li>• أندلسي (قرميد وجليز)</li>
+                                                <li>• شرقي (قبة هرمية)</li>
+                                                <li>• حفصي (بساطة)</li>
+                                            </ul>
+                                        </td>
+                                        <td class="border border-gray-200 px-4 py-4 text-sm text-gray-700">
+                                            <ul class="space-y-1">
+                                                <li>• قبة هرمية (مخروطية)</li>
+                                                <li>• قرميد ملون (أخضر وأصفر)</li>
+                                                <li>• طلاء جليز لامع</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="mt-6 info-callout p-4 rounded-xl">
+                            <p class="text-sm text-gray-700"><strong>📊 ملاحظة:</strong> يظهر من الجدول أن جميع المعالم الحفصية تعكس <strong>تعددية التأثيرات الفنية</strong> (أندلسية وزيرية وشرقية) مع <strong>حفاظ على الهوية المحلية الإفريقية</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="py-16 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-sky-100 text-sky-800 px-4 py-1 rounded-full text-sm font-medium mb-4">الأنشطة المهارية</span>
+                <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4">أنشطة تطبيقية</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">تمارين ومهارات عملية لتعزيز الفهم</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Activity 1 -->
+                <div class="activity-card rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="w-10 h-10 bg-sky-500 text-white rounded-xl flex items-center justify-center font-bold text-lg">1</span>
+                        <h3 class="font-bold text-sky-800 text-lg">نشاط القراءة والتحليل</h3>
+                    </div>
+                    <div class="bg-white rounded-xl p-4 mb-4 border border-sky-200">
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            <strong>النص:</strong> "اشتهرت مدينة تونس في العهد الحفصي بكثرة مساجدها التي تجاوزت 200 مسجد، كما ازدهرت فيها المدارس والزوايا والأسواق. وقد جعلها الحفصيون مركزاً ثقافياً يجتذب الطلاب والعلماء من مختلف أنحاء العالم الإسلامي."
+                        </p>
+                    </div>
+                    <h4 class="font-bold text-gray-800 mb-3 text-sm">الأسئلة:</h4>
+                    <ol class="space-y-3 mr-4">
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 bg-sky-100 text-sky-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">أ</span>
+                            <span class="text-gray-700 text-sm">ما هي المؤسسات الدينية والتعليمية التي اشتهرت بها مدينة تونس الحفصية؟</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 bg-sky-100 text-sky-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">ب</span>
+                            <span class="text-gray-700 text-sm">بماذا جعل الحفصيون مدينة تونس مركزاً للإشعاع الثقافي؟</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 bg-sky-100 text-sky-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">ج</span>
+                            <span class="text-gray-700 text-sm">استخرج من النص عبارة تدل على الأهمية العلمية لمدينة تونس.</span>
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- Activity 2 -->
+                <div class="activity-card rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="w-10 h-10 bg-sky-500 text-white rounded-xl flex items-center justify-center font-bold text-lg">2</span>
+                        <h3 class="font-bold text-sky-800 text-lg">نشاط التصنيف والترتيب</h3>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                        صنف المعالم المعمارية لمدينة تونس الحفصية في الجدول التالي حسب نوعها (ديني، مدني، جنائزي):
+                    </p>
+                    <div class="bg-white rounded-xl p-4 border border-sky-200 mb-4">
+                        <div class="grid grid-cols-3 gap-2 text-center text-xs font-bold">
+                            <div class="bg-sky-100 text-sky-800 p-2 rounded">ديني</div>
+                            <div class="bg-indigo-100 text-indigo-800 p-2 rounded">مدني</div>
+                            <div class="bg-purple-100 text-purple-800 p-2 rounded">جنائزي</div>
+                        </div>
+                        <div class="mt-3 text-center text-gray-500 text-sm">
+                            <p>أكمل التصنيف بنفسك...</p>
+                        </div>
+                    </div>
+                    <div class="info-callout p-3 rounded-lg">
+                        <p class="text-xs text-gray-600"><strong>💡 تلميح:</strong> جامع الزيتونة، جامع القصبة، المدرسة الشماعية، زاوية سيدي قاسم، ميضأة السلطان</p>
+                    </div>
+                </div>
+
+                <!-- Activity 3 -->
+                <div class="activity-card rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="w-10 h-10 bg-sky-500 text-white rounded-xl flex items-center justify-center font-bold text-lg">3</span>
+                        <h3 class="font-bold text-sky-800 text-lg">نشاط المقارنة</h3>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                        قارن بين <strong>جامع الزيتونة</strong> و<strong>جامع القصبة</strong> من حيث:
+                    </p>
+                    <div class="bg-white rounded-xl p-4 border border-sky-200">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr>
+                                    <th class="bg-sky-50 p-2 text-sky-800 font-bold border border-sky-200">المعيار</th>
+                                    <th class="bg-sky-50 p-2 text-sky-800 font-bold border border-sky-200">جامع الزيتونة</th>
+                                    <th class="bg-sky-50 p-2 text-sky-800 font-bold border border-sky-200">جامع القصبة</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border border-gray-200 p-2 font-medium">الحجم</td>
+                                    <td class="border border-gray-200 p-2 text-center text-gray-600">؟</td>
+                                    <td class="border border-gray-200 p-2 text-center text-gray-600">؟</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-200 p-2 font-medium">الموقع</td>
+                                    <td class="border border-gray-200 p-2 text-center text-gray-600">؟</td>
+                                    <td class="border border-gray-200 p-2 text-center text-gray-600">؟</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-200 p-2 font-medium">الوظيفة</td>
+                                    <td class="border border-gray-200 p-2 text-center text-gray-600">؟</td>
+                                    <td class="border border-gray-200 p-2 text-center text-gray-600">؟</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-200 p-2 font-medium">التأثيرات</td>
+                                    <td class="border border-gray-200 p-2 text-center text-gray-600">؟</td>
+                                    <td class="border border-gray-200 p-2 text-center text-gray-600">؟</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Activity 4 -->
+                <div class="activity-card rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="w-10 h-10 bg-sky-500 text-white rounded-xl flex items-center justify-center font-bold text-lg">4</span>
+                        <h3 class="font-bold text-sky-800 text-lg">نشاط الكتابة</h3>
+                    </div>
+                    <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                        اكتب فقرة من 10-15 سطراً حول <strong>"أهمية المدرسة الشماعية كنموذج للعمارة المدنية الحفصية"</strong> مع مراعاة:
+                    </p>
+                    <ul class="space-y-2 mr-4">
+                        <li class="flex items-start gap-2">
+                            <span class="text-sky-500 mt-1">◆</span>
+                            <span class="text-gray-700 text-sm">تحديد موقعها وزمن بنائها</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-sky-500 mt-1">◆</span>
+                            <span class="text-gray-700 text-sm">وصف خصائصها المعمارية</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-sky-500 mt-1">◆</span>
+                            <span class="text-gray-700 text-sm">ذكر التأثيرات الفنية المختلفة</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-sky-500 mt-1">◆</span>
+                            <span class="text-gray-700 text-sm">بيان وظيفتها التعليمية</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Activity 5 -->
+                <div class="activity-card rounded-2xl p-8 shadow-lg card-hover md:col-span-2">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="w-10 h-10 bg-sky-500 text-white rounded-xl flex items-center justify-center font-bold text-lg">5</span>
+                        <h3 class="font-bold text-sky-800 text-lg">نشاط البحث والتوثيق (عمل جماعي)</h3>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                                <strong>الموضوع:</strong> إعداد ملف توثيقي عن أحد المعالم المعمارية لمدينة تونس الحفصية.
+                            </p>
+                            <h4 class="font-bold text-gray-800 text-sm mb-3">خطوات العمل:</h4>
+                            <ol class="space-y-2 mr-4">
+                                <li class="flex items-start gap-2">
+                                    <span class="w-5 h-5 bg-sky-100 text-sky-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs">1</span>
+                                    <span class="text-gray-700 text-sm">اختيار المعلم المعماري (فردي أو ثنائي)</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="w-5 h-5 bg-sky-100 text-sky-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs">2</span>
+                                    <span class="text-gray-700 text-sm">جمع المعلومات من مصادر متنوعة (كتب، إنترنت، زيارات)</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="w-5 h-5 bg-sky-100 text-sky-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs">3</span>
+                                    <span class="text-gray-700 text-sm">التقاط صور أو رسم تخطيطي للمعلم</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="w-5 h-5 bg-sky-100 text-sky-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs">4</span>
+                                    <span class="text-gray-700 text-sm">كتابة الملف وتنظيمه</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="w-5 h-5 bg-sky-100 text-sky-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs">5</span>
+                                    <span class="text-gray-700 text-sm">العرض الشفهي أمام turma</span>
+                                </li>
+                            </ol>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-sm mb-3">عناصر الملف:</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-sky-500 mt-1">◆</span>
+                                    <span class="text-gray-700 text-sm">اسم المعلم وموقعه</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-sky-500 mt-1">◆</span>
+                                    <span class="text-gray-700 text-sm">تاريخ بنائه و founder</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-sky-500 mt-1">◆</span>
+                                    <span class="text-gray-700 text-sm">وظيفته</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-sky-500 mt-1">◆</span>
+                                    <span class="text-gray-700 text-sm">خصائصه المعمارية</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-sky-500 mt-1">◆</span>
+                                    <span class="text-gray-700 text-sm">التأثيرات الفنية</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-sky-500 mt-1">◆</span>
+                                    <span class="text-gray-700 text-sm">صور أو رسومات</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-sky-500 mt-1">◆</span>
+                                    <span class="text-gray-700 text-sm">المصادر والمراجع</span>
+                                </li>
+                            </ul>
+                            
+                            <div class="mt-4 success-callout p-3 rounded-lg">
+                                <p class="text-xs text-gray-600"><strong>✅ معايير التقييم:</strong> الدقة العلمية (2نقاط) + التنظيم (1نقطة) + العرض (1نقطة) + الصور (1نقطة)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activity 6 -->
+                <div class="activity-card rounded-2xl p-8 shadow-lg card-hover md:col-span-2">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="w-10 h-10 bg-sky-500 text-white rounded-xl flex items-center justify-center font-bold text-lg">6</span>
+                        <h3 class="font-bold text-sky-800 text-lg">نشاط الرسم والتخطيط</h3>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                                <strong>المطلوب:</strong> ارسم مخططاً لمدينة تونس في العهد الحفصي يوضح:
+                            </p>
+                            <ul class="space-y-2 mr-4">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-sky-500 mt-1">◆</span>
+                                    <span class="text-gray-700 text-sm">السور الداخلي والخارجي</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-sky-500 mt-1">◆</span>
+                                    <span class="text-gray-700 text-sm">موقع جامع الزيتونة في المركز</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-sky-500 mt-1">◆</span>
+                                    <span class="text-gray-700 text-sm">القصبة في الجهة الغربية</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-sky-500 mt-1">◆</span>
+                                    <span class="text-gray-700 text-sm">الأسواق حول المسجد</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-sky-500 mt-1">◆</span>
+                                    <span class="text-gray-700 text-sm">الأحياء السكنية (الحارات)</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-sky-500 mt-1">◆</span>
+                                    <span class="text-gray-700 text-sm">بحيرة تونس شمالاً</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-gradient-to-br from-sky-50 to-blue-50 rounded-xl p-6 border border-sky-200 text-center">
+                            <svg class="w-32 h-32 mx-auto text-sky-300 mb-3" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16zm-5-9h2a3 3 0 006 0h2a5 5 0 01-10 0zm1-2a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm8 0a1.5 1.5 0 110-3 1.5 1.5 0 010 3z"/>
+                            </svg>
+                            <p class="text-sky-800 text-sm font-medium">ارسم مخطط مدينة تونس</p>
+                            <p class="text-sky-600 text-xs mt-1">استخدم الأشكال الهندسية والألوان التوضيحية</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Summary Section -->
+    <section class="py-16 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-black mb-4">خلاصة الدرس</h2>
+                <div class="h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent mx-auto w-60 rounded"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-amber-400 mb-4 flex items-center gap-2">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                            <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/>
+                        </svg>
+                        النقاط الرئيسية
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <span class="text-amber-400 mt-1">◆</span>
+                            <span class="text-gray-300 text-sm">مدينة تونس الحفصية: موضع استراتيجي ومخطط عمراني محكم</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-amber-400 mt-1">◆</span>
+                            <span class="text-gray-300 text-sm">تنوع معماري: حارات، مساجد، أسواق، زوايا، مدارس، مقابر، أسوار</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-amber-400 mt-1">◆</span>
+                            <span class="text-gray-300 text-sm">تأثيرات فنية متعددة: أندلسية وزيرية وشرقية مع هوية محلية</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-amber-400 mt-1">◆</span>
+                            <span class="text-gray-300 text-sm">彰显 القدرة الحفصية على الجمع بين التأثيرات المختلفة</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-amber-400 mt-1">◆</span>
+                            <span class="text-gray-300 text-sm">العمارة تعبير عن الحضارة والثقافة والقيم</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-amber-400 mb-4 flex items-center gap-2">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/>
+                        </svg>
+                        أسئلة للتفكير
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
+                            <p class="text-gray-300 text-sm">لماذا جعل الحفصيون مدينة تونس عاصمة لدولتهم بدلاً من القيروان؟</p>
+                        </div>
+                        <div class="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
+                            <p class="text-gray-300 text-sm">ما الذي يعكسه تواجد مقابر للمسلمين والنصارى واليهود في مدينة واحدة؟</p>
+                        </div>
+                        <div class="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
+                            <p class="text-gray-300 text-sm">كيف تختلف العمارة الحفصية عن العمارة الأموية في الأندلس؟</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Teacher Info -->
+            <div class="mt-12 text-center bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+                <div class="flex items-center justify-center gap-4 mb-4">
+                    <div class="w-16 h-16 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-lg">إعداد الأستاذ رياض سليمي</h4>
+                        <p class="text-amber-300 text-sm">معلم التاريخ والجغرافيا</p>
+                    </div>
+                </div>
+                <p class="text-gray-400 text-sm">البرنامج الرسمي لمادة التاريخ - وزارة التربية بالجمهورية التونسية</p>
+                <p class="text-gray-400 text-sm">المستوى: أولى ثانوي - المحور: تونس في العهد الحفصي - السنة الدراسية 26/27</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex items-center justify-center gap-3 mb-4">
+                <div class="w-8 h-8 bg-gradient-to-br from-amber-500 to-amber-700 rounded-lg flex items-center justify-center">
+                    <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7v10l10 5 10-5V7L12 2z"/>
+                    </svg>
+                </div>
+                <span class="font-bold text-white">عمارة مدينة تونس في العهد الحفصي</span>
+            </div>
+            <p class="text-sm mb-2">درس تعليمي مخصص للمستوى الأول ثانوي - مادة التاريخ</p>
+            <p class="text-xs text-gray-500">© 2026/2027 - جميع الحقوق محفوظة</p>
+        </div>
     </footer>
 
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/>
+        </svg>
+    </button>
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('menuBtn').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking links
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobileMenu').classList.add('hidden');
+            });
+        });
+
+        // Accordion Toggle
+        function toggleAccordion(element) {
+            const content = element.nextElementSibling;
+            const icon = element.querySelector('.rotate-icon');
+            
+            // Close all other accordions
+            document.querySelectorAll('.accordion-content').forEach(item => {
+                if (item !== content) {
+                    item.classList.remove('active');
+                    item.previousElementSibling.querySelector('.rotate-icon').classList.remove('active');
+                }
+            });
+            
+            content.classList.toggle('active');
+            icon.classList.toggle('active');
+        }
+
+        // Tab System
+        function showTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Remove active from all buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+                btn.classList.add('bg-gray-100', 'text-gray-600');
+            });
+            
+            // Show selected tab
+            document.getElementById('tab-' + tabName).classList.add('active');
+            
+            // Activate button
+            event.target.classList.add('active');
+            event.target.classList.remove('bg-gray-100', 'text-gray-600');
+        }
+
+        // Scroll to Top Button
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Show/hide scroll button
+        window.addEventListener('scroll', function() {
+            const scrollBtn = document.getElementById('scrollToTop');
+            if (window.scrollY > 500) {
+                scrollBtn.classList.add('visible');
+            } else {
+                scrollBtn.classList.remove('visible');
+            }
+        });
+
+        // Progress Bar
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            document.getElementById('progressBar').style.width = scrollPercent + '%';
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.card-hover, .bg-white.rounded-3xl').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Print functionality
+        function printPage() {
+            window.print();
+        }
+    </script>
 </body>
-</html>
+                        </html>
